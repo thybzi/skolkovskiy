@@ -1,0 +1,36 @@
+exclude: [gulpfile.js, package.json, node_modules, Gemfile, Gemfile.lock]
+baseurl: ""
+future: true
+permalink: /life/:year-:month-:day_:slug/
+excerpt_separator: <!--more-->
+paginate: 5
+paginate_path: "/life/page:num/"
+gems: [jekyll-paginate]
+
+collections:
+  albums:
+    output: true
+    permalink: /gallery/:path/
+  children:
+    output: false
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: "post"
+      cover_image_key: 0
+  -
+    scope:
+      path: ""
+      type: albums
+    values:
+      layout: "album"
+      cover_image_key: 0

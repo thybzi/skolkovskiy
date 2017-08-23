@@ -1,0 +1,59 @@
+{% capture devnull %}
+
+    {# DON'T. EVER. TOUCH. THIS. #}
+    {# (or rewrite completely)   #}
+
+    {% assign months_count = include.months_count | default:3 %}
+    {% if months_count > 1 %}{% assign multiple_months = true %}{% endif %}
+    {% assign start_month = site.data.settings.current_date | date:"%-m" %}
+    {% assign end_month = start_month | plus:months_count | minus:1 %}
+    {% capture months %}
+        {% for month_raw in (start_month..end_month) %}
+            {% assign month = month_raw | modulo:12 %}
+            {% if month == 0 %}{% assign month = 12 %}{% endif %}
+            {% assign plus_years = month_raw | divided_by:12 | floor %}
+            {{ month }}:{{ plus_years }}{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+    {% endcapture %}
+
+    {% assign months = months | split:"," %}
+    {% capture children_data %}
+        {% for month_item in months %}
+            {% assign month = month_item | split:":" | first | strip %}
+            {% assign plus_years = month_item | split:":" | last | strip %}
+            00*
+            Дни рождения в {% include _helpers/monthname.html month=month %}:
+            {% for child in site.children %}
+                {% assign birthmonth = child.birthdate | date:"%-m" %}
+                {% if birthmonth == month %}
+                    {% capture birthdate %}{% include _helpers/birthdate.html date=child.birthdate %}{% endcapture %}
+                    {% capture age %}{% include _helpers/age.html date=child.birthdate plus_years=plus_years %}{% endcapture %}
+                    {% capture next_birthday %}{% include _helpers/next-birthday.html date=child.birthdate plus_years=plus_years %}{% endcapture %}
+                    ,{{ child.birthdate | date:"%0d" }}*
+                    {{ child.name }};{{ birthdate | strip }};{{ age | strip }};{{ next_birthday | strip }}
+                {% endif %}
+            {% endfor %}
+            {% unless forloop.last %} | {% endunless %}
+        {% endfor %}
+        {% assign outputs = output | newline_to_br | strip_newlines | split:"<br />" %}
+    {% endcapture %}
+
+    {% assign children_data = children_data | split:"|" %}
+    {% capture output_raw %}
+        {% for month_data_raw in children_data %}
+            {% assign month_data = (month_data_raw | split:"," | sort:0) %}
+            {% for item_raw in month_data %}
+                {% assign item = (item_raw | split:"*" | last | strip) %}
+                {% unless include.omit_monthnames and forloop.first %}
+                    {% if forloop.first %}!month;{% endif %}{{ item }}
+                {% endunless %}
+            {% endfor %}
+        {% endfor %}
+    {% endcapture %}
+    {% assign o = output_raw | newline_to_br | strip_newlines | split:"<br />" %}
+    {% capture output %}{% for ir in o %}{%
+           assign i = ir | strip %}{% assign s = i | size %}{% if s > 0 %}{{ i }}{%
+           unless forloop.last %}|{% endunless %}{% endif %}{%
+       endfor %}{% endcapture %}
+
+{% endcapture %}{% assign devnull = nil %}{{ output }}

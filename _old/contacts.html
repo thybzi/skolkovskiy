@@ -1,0 +1,126 @@
+---
+title: Контакты
+---
+
+<div style="overflow: hidden;">
+
+<div style="float: left; width: 50%;">
+
+<p><b>Директор:</b><br>
+Комаров Андрей Сергеевич<br>
+Приёмные дни:<br>
+понедельник 9:00-13:00<br>
+пятница 13:00-17:00<br>
+(495) 446-13-94</p>
+
+<p><b>Зам. директора по&nbsp;учебно-воспитательной части:</b><br>
+Машкарина Надежда Александровна<br>
+Приёмные дни:<br>
+ежедневно 9:00-17:00<br>
+(495) 446-40-64</p>
+
+<p><b>Социальный педагог:</b><br>
+Параскева Наталья Серафимовна<br>
+Приёмные дни:<br>
+ежедневно 9:00-17:00<br>
+(495) 446-40-64</p>
+
+<p><b>Зам. директора по&nbsp;медицинской части:</b><br>
+Сутурина Оксана Александровна<br>
+(495) 448-35-63</p>
+
+<p><b>Зам. директора по&nbsp;АХД:</b><br>
+Лебедева Татьяна Петровна<br>
+(495) 446-24-14</p>
+
+<p><b>Зам. директора по&nbsp;безопасности:</b><br>
+Мензек Валентин Аркадьевич<br>
+(495) 448-35-74</p>
+
+<p><b>Отдел кадров:</b><br>
+Тимонькина Людмила Сергеевна<br>
+(495) 448-05-59</p>
+
+<p><b>Гл. бухгалтер:</b><br>
+Бородачева Светлана Викторовна<br>
+(495) 446-49-93</p>
+
+<br>
+
+<p>121353&nbsp;г.&nbsp;Москва, Сколковское шоссе, д.&nbsp;6.<br>
+ЗАО, район «Можайский»<br>
+Телефон: (495) 446-11-04<br>
+Факс: (495) 446-13-94<br>
+E-mail: <span id="cloak32771">Этот адрес электронной почты защищен от спам-ботов. У вас должен быть включен JavaScript для просмотра.</span><script type='text/javascript'>
+ //<!--
+ document.getElementById('cloak32771').innerHTML = '';
+ var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+ var path = 'hr' + 'ef' + '=';
+ var addy32771 = 'dd&#105;24' + '&#64;';
+ addy32771 = addy32771 + 'dszn' + '&#46;' + 'r&#117;';
+ var addy_text32771 = 'dd&#105;24' + '&#64;' + 'dszn' + '&#46;' + 'r&#117;';
+ document.getElementById('cloak32771').innerHTML += '<a ' + path + '\'' + prefix + ':' + addy32771 + '\'>'+addy_text32771+'<\/a>';
+ //-->
+ </script></p>
+
+<p>Проезд: ст.м. «Славянский бульвар»<br>
+автобусы 205, 818, 231; маршрутное такси 523, 818<br>
+остановка Вяземская, д.&nbsp;13</p>
+
+<p><script type="text/javascript" charset="utf-8" src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid=1zhKKzslhrkRx5BdKFbY2aPXXSt5NXe7&width=376&height=323"></script></p>
+
+
+<br>
+
+<p>119517 г.&nbsp;Москва, ул.&nbsp;Нежинская, д.&nbsp;12<br>
+ЗАО, район «Очаково-Матвеевское»<br>
+Телефон: (495) 442-45-64<br>
+E-mail: <span id="cloak14372">Этот адрес электронной почты защищен от спам-ботов. У вас должен быть включен JavaScript для просмотра.</span><script type='text/javascript'>
+ //<!--
+ document.getElementById('cloak14372').innerHTML = '';
+ var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+ var path = 'hr' + 'ef' + '=';
+ var addy14372 = 'dd&#105;24' + '&#64;';
+ addy14372 = addy14372 + 'dszn' + '&#46;' + 'r&#117;';
+ document.getElementById('cloak14372').innerHTML += '<a ' + path + '\'' + prefix + ':' + addy14372 + '\'>' + addy14372+'<\/a>';
+ //-->
+ </script></p>
+
+<p>Проезд:<br>
+ст.&nbsp;м. Славянский бульвар авт.&nbsp;641 до&nbsp;ост. «Дом ребёнка»<br>
+ст.&nbsp;м. Кунцевская авт.&nbsp;11, 688, 688к, 856 до&nbsp;ост. «Матвеевская&nbsp;ул.»</p>
+
+<p><script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=bg5UNxMzUrRiZKqZPaBfLr4R4SjsQL6D&width=376&height=323&lang=ru_RU&sourceType=constructor"></script></p>
+
+</div>
+
+<div style="float: left; width: 50%;">
+    <p><strong>Написать нам письмо:</strong></p>
+    {% assign form_id = "message" %}
+    <form action="https://getsimpleform.com/messages?form_api_token={{ site.data.settings.form_api_token }}" method="post" class="simpleForm" id="{{ form_id }}">
+        {% include _helpers/redirect-to.html form_id=form_id %}
+        <p>
+            <label for="name">Ваше имя <span>*</span></label>
+            <input type="text" name="name" id="name" class="inputtext" value="" required>
+        </p>
+        <p>
+            <label for="text">Ваше сообщение <span>*</span></label>
+            <textarea name="text" id="text" class="inputtext" required></textarea>
+        </p>
+        <p><input type="submit" value="Отправить"></p>
+    </form>
+    <div id="result" class="form-result"></div>
+    <script>
+        (function() {
+            var form_id = '{{ form_id }}',
+                form_elem = document.getElementById(form_id),
+                message_elem = document.getElementById('result');
+            if (location.hash === ('#' + form_id)) {
+                form_elem.style.display = 'none';
+                message_elem.textContent = 'Сообщение успешно отправлено';
+            }
+        })();
+    </script>
+</div>
+
+</div>

@@ -1,0 +1,120 @@
+---
+title: Главная
+layout: start
+---
+
+<div class="slider">
+
+    <script>
+        jQuery(document).ready(function() {
+            jQuery('.box_skitter_id').skitter({
+                velocity: 1,
+                interval: 5000,
+                auto_play: true,
+                focus: false,
+                focus_position: 'center',
+                numbers:true,	label: true,
+                hideTools: false,
+                fullscreen: false,
+                width_label: 'null',
+                show_randomly: false,
+                controls: false,
+                controls_position: 'center',
+                progressbar: false,
+                enable_navigation_keys: false,
+                animateNumberOut: {backgroundColor:'#333333', color:'#FFFFFF'},
+                animateNumberOver: {backgroundColor:'#000000', color:'#FFFFFF'},
+                animateNumberActive: {backgroundColor:'#CC3333', color:'#FFFFFF'},
+                numbers_align: 'right'
+            });
+        });
+    </script>
+
+    <div class="mod_jt_skitter_slideshow_img ">
+        <div class="box_skitter box_skitter_id">
+            <ul>
+                <li><a href="/" target="_self"><img src="{{ site.baseurl }}/files/slider/1.jpg" width="928" height="373" class="fade"  alt=""/></a><div class="label_text"></div></li><li><a href="/" target="_self"><img src="{{ site.baseurl }}/files/slider/2.jpg" width="928" height="373" class="fade"  alt=""/></a><div class="label_text"></div></li><li><a href="/" target="_self"><img src="{{ site.baseurl }}/files/slider/3.jpg" width="928" height="373" class="fade"  alt=""/></a><div class="label_text"></div></li><li><a href="/" target="_self"><img src="{{ site.baseurl }}/files/slider/4.jpg" width="928" height="373" class="fade"  alt=""/></a><div class="label_text"></div></li><li><a href="/" target="_self"><img src="{{ site.baseurl }}/files/slider/5.jpg" width="928" height="373" class="fade"  alt=""/></a><div class="label_text"></div></li><li><a href="/" target="_self"><img src="{{ site.baseurl }}/files/slider/6.jpg" width="928" height="373" class="fade"  alt=""/></a><div class="label_text"></div></li><li><a href="/" target="_self"><img src="{{ site.baseurl }}/files/slider/7.jpg" width="928" height="373" class="fade"  alt=""/></a><div class="label_text"></div></li>		</ul>
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+</div>
+
+<div class="spacer13"></div>
+
+<div class="slogan"><span>Наш дом полон <br>добра и любови</span></div>
+
+<div class="spacer13"></div>
+
+<div class="bd">
+    <div class="bd1">
+        {% assign post = site.posts | where_exp:"announce_title","announce_title" | first %}
+        <div class="bd_title"><div>{{ post.announce_title | first }} <span>{{ post.announce_title | last }}</span></div></div>
+        <div class="bd_content">
+            <div>{{ post.excerpt }}</div>
+            <span class="bd_more"><a href="{{ post.url | prepend:site.baseurl }}">узнать больше</a></span>
+        </div>
+
+    </div>
+    <div class="bd2">
+        <div class="bd_title"><div>Поздравь <span>ребенка</span></div></div>
+
+        <div class="bd_content" id="birthlist">
+            <span class="bd_more"><a href="{{site.baseurl}}/about/birthdays/">узнать больше</a></span>
+        </div>
+        <script>
+            (function () {
+                var xhr = new XMLHttpRequest();
+                xhr.open('GET', '{{ site.baseurl }}/files/birthlist.json');
+                xhr.onload = function() {
+                    var now = Date.now();
+                    var container = document.getElementById("birthlist");
+                    var data = JSON.parse(xhr.responseText);
+                    var data_items_count = data.length;
+                    var output_items_count_max = 9;
+                    var output_items_count = 0;
+                    var i = 0;
+                    var is_odd = false;
+                    var item;
+                    var item_time;
+                    var elem;
+                    while ((i < data_items_count) && (output_items_count < output_items_count_max)) {
+                        item = data[i];
+                        item_time = Date.parse(item.birthday);
+                        if (item_time > now) {
+                            elem = document.createElement('div');
+                            is_odd = !is_odd;
+                            if (is_odd) {
+                                elem.className = 'bd_color';
+                            }
+                            elem.innerHTML = item.birthday_str + ' — ' + item.name + ' (' + item.age_str + ')';
+                            container.appendChild(elem);
+                            output_items_count++;
+                        }
+                        i++;
+                    }
+                };
+                xhr.send();
+            })();
+        </script>
+    </div>
+    <div class="bd3">
+        <div class="bd_title"><div>Как <span>нам помочь?</span></div></div>
+        <div class="bd_content">
+            <div>Мы&nbsp;всегда будем рады помощи в&nbsp;организации досуга наших воспитанников, это может быть:</div>
+            <ul class="arrow">
+                <li>предоставление и&nbsp;оплата автобуса для организации поездок;</li>
+                <li>организация однодневных экскурсий;</li>
+                <li>помощь в&nbsp;приобретении санаторно-курортных путевок;</li>
+                <li>приобретение билетов в&nbsp;цирк, театр, музей, заказник.</li>
+            </ul>
+            <span class="bd_more"><a href="{{site.baseurl}}/about/help/">узнать больше</a></span>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+
+<div class="spacer13"></div>
+
+<div class="banner"><a href="http://www.ya-roditel.ru/" target="_blank"><img src="{{ site.baseurl }}/files/teasers/supergeroi-banner.gif"></a></div>
+
+<div class="banner"><iframe width="640" height="360" src="https://www.youtube.com/embed/RSv0xvIgyVw" frameborder="0" allowfullscreen></iframe></div>

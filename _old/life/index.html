@@ -1,0 +1,79 @@
+---
+title: Стенгазета
+---
+
+<div class="blog">
+
+    {% for post in paginator.posts %}
+    <div class="posts-item">
+        {% if post.images %}
+            {% capture devnull %}
+                {% assign dateslug = post.url | split:"/" | last %}
+                {% assign dir = "files/life/" | append:dateslug | append:"/" %}
+                {% assign cover_image_data = post.images[post.cover_image_key] | split:'|' %}
+                {% assign image = cover_image_data[0] | strip | prepend:dir %}
+                {% assign thumb = cover_image_data[1] | strip %}
+                {% assign thumb_strlen = thumb | size %}
+                {% if thumb_strlen > 0 %}
+                    {% assign thumb = thumb | prepend:dir %}
+                {% endif %}
+                {% assign caption = cover_image_data[2] | strip %}
+            {% endcapture %}{% assign devnull = nil %}
+            {% include gallery-item.html image=image thumb=thumb caption=caption %}
+        {% endif %}
+        <h2>{{ post.title }}</h2>
+        <dl class="article-info">
+            <dd class="create">{{ post.date | date:"%d.%m.%Y" }}</dd>
+        </dl>
+        {{ post.excerpt }}
+        <p class="readmore"><a href="{{ post.url | prepend:site.baseurl }}">Подробнее...</a></p>
+    </div>
+    {% endfor %}
+
+    {% assign first_page_path = site.paginate_path | prepend:site.baseurl | replace:"/page:num/","/" %}
+    <div class="pagination">
+        <p class="counter">Страница {{ paginator.page }} из {{ paginator.total_pages }}</p>
+        <ul>
+            <li class="pagination-start">
+                {% if paginator.previous_page %}
+                <a title="В начало" href="{{ first_page_path }}" class="pagenav">В начало</a>
+                {% else %}
+                <span class="pagenav">В начало</span>
+                {% endif %}
+            </li>
+            <li class="pagination-prev">
+                {% if paginator.previous_page %}
+                <a title="Назад" href="{{ paginator.previous_page_path | prepend:site.baseurl }}" class="pagenav">Назад</a>
+                {% else %}
+                <span class="pagenav">Назад</span>
+                {% endif %}
+            </li>
+            {% for page_num in (1..paginator.total_pages) %}
+            <li>
+                {% if page_num == paginator.page %}
+                <span class="pagenav">{{ page_num }}</span>
+                {% elsif page_num == 1 %}
+                <a title="{{ page_num }}" href="{{ first_page_path }}" class="pagenav">{{ page_num }}</a>
+                {% else %}
+                <a title="{{ page_num }}" href="{{ site.paginate_path | prepend:site.baseurl | replace:':num',page_num }}" class="pagenav">{{ page_num }}</a>
+                {% endif %}
+            </li>
+            {% endfor %}
+            <li class="pagination-next">
+                {% if paginator.next_page %}
+                <a title="Вперёд" href="{{ paginator.next_page_path | prepend:site.baseurl }}" class="pagenav">Вперёд</a>
+                {% else %}
+                <span class="pagenav">Вперёд</span>
+                {% endif %}
+            </li>
+            <li class="pagination-start">
+                {% if paginator.next_page %}
+                <a title="В конец" href="{{ site.paginate_path | prepend:site.baseurl | replace:':num',paginator.total_pages }}" class="pagenav">В конец</a>
+                {% else %}
+                <span class="pagenav">В конец</span>
+                {% endif %}
+            </li>
+        </ul>
+    </div>
+
+</div>

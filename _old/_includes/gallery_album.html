@@ -1,0 +1,26 @@
+{% capture devnull %}
+    {% if include.album %}
+        {% assign album = include.album %}
+    {% elsif include.album_name %}
+        {% assign album = site.albums | where:"slug",include.album_name | first %}
+    {% endif %}
+{% endcapture %}{% assign devnull = nil %}
+{% unless include.is_internal %}
+<div class="phocagallery">
+{% endunless %}
+{% for item in album.images %}
+    {% capture devnull %}
+        {% assign data = item | split:"|" %}
+        {% assign image = data[0] | strip | prepend:"/" | prepend:album.slug | prepend:"files/gallery/"  %}
+        {% assign thumb = data[1] | strip %}
+        {% assign caption = data[2] | strip %}
+        {% assign thumb_strlen = thumb | size %}
+        {% if thumb_strlen > 0 %}
+            {% assign thumb = thumb | prepend:"/" | prepend:album.slug | prepend:"files/gallery/" %}
+        {% endif %}
+    {% endcapture %}{% assign devnull = nil %}
+    {% include gallery-item.html image=image thumb=thumb caption=caption %}
+{% endfor %}
+{% unless include.is_internal %}
+</div>
+{% endunless %}

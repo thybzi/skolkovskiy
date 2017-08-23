@@ -1,0 +1,25 @@
+{% capture devnull %}
+    {% if include.post %}
+        {% assign post = include.post %}
+    {% elsif include.post_hru %}
+        {% assign url = "/life/" | append:include.post_hru | append:"/" %}
+        {% assign post = site.posts | where:"url",url | first %}
+    {% endif %}
+    {% assign dateslug = post.url | split:"/" | last %}
+    {% assign dir = "files/life/" | append:dateslug | append:"/" %}
+{% endcapture %}{% assign devnull = nil %}
+<div class="phocagallery">
+{% for item in post.images %}
+    {% capture devnull %}
+        {% assign data = item | split:"|" %}
+        {% assign image = data[0] | strip | prepend:dir  %}
+        {% assign thumb = data[1] | strip %}
+        {% assign caption = data[2] | strip %}
+        {% assign thumb_strlen = thumb | size %}
+        {% if thumb_strlen > 0 %}
+            {% assign thumb = thumb | prepend:dir %}
+        {% endif %}
+    {% endcapture %}{% assign devnull = nil %}
+    {% include gallery-item.html image=image thumb=thumb caption=caption %}
+{% endfor %}
+</div>

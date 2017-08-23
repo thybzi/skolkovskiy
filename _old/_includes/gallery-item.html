@@ -1,0 +1,30 @@
+{% capture devnull %}
+
+    {% assign url_prefix = site.baseurl | append:"/" %}
+    {% assign image = include.image | prepend:url_prefix %}
+
+    {% assign thumb_strlen = include.thumb | size %}
+    {% if thumb_strlen > 0 %}
+        {% assign thumb = include.thumb | prepend:url_prefix %}
+    {% else %}
+        {% assign thumb = image | replace:"_thumb_l","_thumb_m" %}
+    {% endif %}
+
+    {% assign caption = include.caption %}
+    {% assign caption_strlen = caption | size %}
+    {% unless caption_strlen > 0 %}
+        {% assign caption = image | split:"." | first | split:"_" | last %}
+    {% endunless %}
+
+{% endcapture %}{% assign devnull = nil %}
+<div class="phocagallery-box-file pgplugin1 {% if include.is_right %}right{% endif %}">
+    <div class="phocagallery-box-file-first">
+        <div class="phocagallery-box-file-second">
+            <div class="phocagallery-box-file-third">
+                    <a class="slimbox" title="{{ caption }}" href="{{ image }}" rel="lightbox-group">
+                        <img class="pg-image" src="{{ thumb }}" alt="{{ caption }}">
+                    </a>
+            </div>
+        </div>
+    </div>
+</div>

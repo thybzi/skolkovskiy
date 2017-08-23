@@ -1,0 +1,31 @@
+{% include _page/top.html %}
+
+<div class="content">
+    <div class="item-page">
+
+        <h1>{{ page.title }}</h1>
+
+        {{ content }}
+
+        <div class="pg-category-view">
+
+            <div class="phocagallery-box-file pg-box-backbtn">
+                <div class="phocagallery-box-file-first">
+                    <div class="phocagallery-box-file-second">
+                        <div class="phocagallery-box-file-third">
+                            <a href="{{ site.baseurl }}/gallery/">
+                                <img src="{{ site.baseurl }}/assets/images/icon-up-images.png" alt="Назад">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        {% include gallery_album.html album=page is_internal=true %}
+
+        </div>
+
+    </div>
+</div>
+
+{% include _page/bottom.html %}

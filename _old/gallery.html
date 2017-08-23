@@ -1,0 +1,28 @@
+---
+title: Галерея
+---
+{% capture devnull %}
+    {% assign albums = site.albums | sort:"order" %}
+    {% assign albums_per_col = albums | size | divided_by:2.0 | ceil %}
+{% endcapture %}{% assign devnull = nil %}
+<div class="pg-cats-box-float"><table><tbody>
+{% for album in albums %}
+{% capture devnull %}
+    {% assign cover_image_uri = album.images[album.cover_image_key] | split:'|' | first | strip %}
+    {% assign cover_image = cover_image_uri | prepend:"/" | prepend:album.slug | prepend:"/files/gallery/" | prepend:site.baseurl %}
+    {% assign thumb = cover_image | replace:"_thumb_l","_thumb_s" %}
+    {% assign url = album.url | prepend:site.baseurl %}
+{% endcapture %}{% assign devnull = nil %}
+<tr>
+    <td align="center" valign="middle" class="pg-imgbg-wrapper">
+        <div class="pg-imgbg"><a href="{{ url }}"><img src="{{ thumb }}" alt="{{ album.title }}"></a></div>
+    </td>
+    <td><a href="{{ url }}">{{ album.title }}</a>&nbsp;<span class="small">({{ album.images | size }})</span></td>
+</tr>
+
+{% if forloop.index == albums_per_col %}
+</tbody></table></div>
+<div class="pg-cats-box-float"><table><tbody>
+{% endif %}
+{% endfor %}
+</tbody></table></div>

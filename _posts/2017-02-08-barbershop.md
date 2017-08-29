@@ -10,4 +10,4 @@ title: Барбешоп «Гараж»
 Где работать мне тогда,  
 чем заниматься?» В. Маяковский
 
-{% include post-video.html post=page file="ExportedTingly.mp4" width=600 height=500 %}
+{% include iframe-video.html src="https://www.youtube.com/embed/BZ5edBA6Kdw" width=560 height=315 %}

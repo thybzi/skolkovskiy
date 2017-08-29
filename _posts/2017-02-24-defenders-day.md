@@ -8,4 +8,4 @@ title: Поздравляем всех с Днём защитника Отече
 Что живём мы без войны, мирно и спокойно!
 
 <!--more-->
-{% include post-video.html post=page file="23-02-2017.mp4" width=600 height=300 %}
+{% include iframe-video.html src="https://www.youtube.com/embed/r1LXGH6oKNw" width=560 height=315 %}

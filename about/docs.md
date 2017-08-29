@@ -16,6 +16,8 @@ title: Нормативная документация
   {% include doc-link.html text="лист 2" uri="files/docs/order_3_2.jpg" %}
 * {% include doc-link.html text="Приказ об утверждении Устава от 01.10.2015" uri="files/docs/order_4_1.jpg" %} |
   {% include doc-link.html text="лист 2" uri="files/docs/order_4_2.jpg" %}
+* {% include doc-link.html text="Приказ о директоре от 03.07.2014" uri="files/docs/order_director_1.jpg" %}
+* {% include doc-link.html text="Приказ о трудовом договоре с директором от 06.07.2015" uri="files/docs/order_director_2.jpg" %}
 
 ### Лицензии
 * {% include doc-link.html text="Лицензия на осуществление образовательной деятельности" uri="files/docs/license_education_1.jpg" %} |
@@ -32,7 +34,12 @@ title: Нормативная документация
   {% include doc-link.html text="Приложение № 1 (лицевая сторона)" uri="files/docs/license_ns_3.jpg" %} |
   {% include doc-link.html text="Приложение № 1 (оборотная сторона)" uri="files/docs/license_ns_4.jpg" %}
 
-### Другие документы
-* {% include doc-link.html text="Правила внутреннего распорядка" uri="files/docs/internal-regulation.docx" %}
+### Отчеты
 * {% include doc-link.html text="Отчет о результатах самообследования (2016–2017)" uri="files/docs/self-examination-report_2016-2017.docx" %}
 * {% include doc-link.html text="Отчет Попечительского совета (2016)" uri="files/docs/trustee-board-report_2016.pdf" %}
+* {% include doc-link.html text="Информация о результатах проведенных проверок (2016–2017)" uri="files/docs/inspections_2016-2017.docx" %}
+
+### Другие документы
+* {% include doc-link.html text="Модель организации Центра" uri="files/docs/model.docx" %}
+* {% include doc-link.html text="Правила внутреннего распорядка" uri="files/docs/internal-regulation.docx" %}
+* {% include doc-link.html text="Режим дня" uri="files/docs/daily-schedule.docx" %}

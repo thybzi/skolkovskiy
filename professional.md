@@ -3,9 +3,10 @@ title: Специалистам
 ---
 
 * Проекты
-* {% include doc-link.html text="Программы" uri="files/services/programs.docx" %} |
+* {% include doc-link.html text="Программы" uri="files/services/programs.docx" %}
 * Вневедомственное взаимодействие
 * {% include doc-link.html text="Структура организации" uri="files/professional/structure.docx" %}
+* {% include doc-link.html text="Опыт работы за последние 5 лет" uri="files/professional/achievements.docx" %}
 * Методическое объединение
 * Отчёт директора
 * Отчёт Попечительского совета: 

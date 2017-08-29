@@ -3,7 +3,7 @@ title: Специалистам
 ---
 
 * Проекты
-* {% include doc-link.html text="Программы" uri="files/education/programs.docx" %} |
+* {% include doc-link.html text="Программы" uri="files/services/programs.docx" %} |
 * Вневедомственное взаимодействие
 * {% include doc-link.html text="Структура организации" uri="files/professional/structure.docx" %}
 * Методическое объединение

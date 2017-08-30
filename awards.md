@@ -2,13 +2,23 @@
 title: Наши достижения
 ---
 
-Здесь вы можете посмотреть награды, грамоты и дипломы, полученные нашими ребятами, — и порадоваться вместе с нами!
+Здесь вы можете посмотреть награды, грамоты и дипломы, полученные нашими ребятами и педагогами, — и порадоваться вместе с нами!
 
 
 ## 2017
 
 {% capture gallery_items %}
     files/awards/2017/phoca_thumb_l_1.jpg
+    files/awards/2017/5834.jpg|files/awards/2017/5834_m.jpg
+    files/awards/2017/5835.jpg|files/awards/2017/5835_m.jpg
+    files/awards/2017/5836.jpg|files/awards/2017/5836_m.jpg
+    files/awards/2017/5837.jpg|files/awards/2017/5837_m.jpg
+    files/awards/2017/5838.jpg|files/awards/2017/5838_m.jpg
+    files/awards/2017/5839.jpg|files/awards/2017/5839_m.jpg
+    files/awards/2017/5840.jpg|files/awards/2017/5840_m.jpg
+    files/awards/2017/5841.jpg|files/awards/2017/5841_m.jpg
+    files/awards/2017/5842.jpg|files/awards/2017/5842_m.jpg
+    files/awards/2017/5843.jpg|files/awards/2017/5843_m.jpg
 {% endcapture %}
 {% include gallery_custom.html items=gallery_items %}
 

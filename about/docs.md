@@ -34,12 +34,28 @@ title: Нормативная документация
   {% include doc-link.html text="Приложение № 1 (лицевая сторона)" uri="files/docs/license_ns_3.jpg" %} |
   {% include doc-link.html text="Приложение № 1 (оборотная сторона)" uri="files/docs/license_ns_4.jpg" %}
 
+### Свидетельства, заключения, уведомления
+* {% include doc-link.html text="Свидетельство о государственной регистрации (19.08.2015)" uri="files/docs/state-registration-certificate_2015-08-19.pdf" %}
+* {% include doc-link.html text="Свидетельство о внесении записи в ЕГРЮЛ (23.11.2011)" uri="files/docs/registry-certificate_2011-11-23.pdf" %}
+* Листы записи ЕГРЮЛ:
+  {% include doc-link.html text="04.06.2015" uri="files/docs/registry_2015-06-04.pdf" %} |
+  {% include doc-link.html text="18.07.2015" uri="files/docs/registry_2015-07-18.pdf" %} |
+  {% include doc-link.html text="28.07.2015" uri="files/docs/registry_2015-07-28.pdf" %} |
+  {% include doc-link.html text="22.10.2015" uri="files/docs/registry_2015-10-22.pdf" %} |
+  {% include doc-link.html text="17.11.2015" uri="files/docs/registry_2015-11-17.pdf" %} |
+  {% include doc-link.html text="24.08.2016" uri="files/docs/registry_2016-08-24.pdf" %}
+* {% include doc-link.html text="Свидетельство о постановке на налоговый учет" uri="files/docs/tax-accounting-certificate.pdf" %}
+* {% include doc-link.html text="Уведомление о снятии с учета в налоговом органе (Дом ребенка № 21; 07.07.2015)" uri="files/docs/tax-authority-registration-cancellation_2015-07-07.pdf" %}
+* {% include doc-link.html text="Заключение о соответствии требованиям пожарной безопасности (17.08.2016)" uri="files/docs/fire-safety-conclusion_2016-08-17.pdf" %}
+* {% include doc-link.html text="Санитарно-эпидемиологическое заключение (08.07.2016)" uri="files/docs/sanitary-conclusion_2016-07-08.pdf" %}
+
 ### Отчеты
 * {% include doc-link.html text="Отчет о результатах самообследования (2016–2017)" uri="files/docs/self-examination-report_2016-2017.docx" %}
 * {% include doc-link.html text="Отчет Попечительского совета (2016)" uri="files/docs/trustee-board-report_2016.pdf" %}
 * {% include doc-link.html text="Информация о результатах проведенных проверок (2016–2017)" uri="files/docs/inspections_2016-2017.docx" %}
 
 ### Другие документы
+* {% include doc-link.html text="Положения и приказы" uri="files/docs/regulations-and-orders.docx" %}
 * {% include doc-link.html text="Модель организации Центра" uri="files/docs/model.docx" %}
 * {% include doc-link.html text="Правила внутреннего распорядка" uri="files/docs/internal-regulation.docx" %}
-* {% include doc-link.html text="Режим дня" uri="files/docs/daily-schedule.docx" %}
+* {% include doc-link.html text="Режим дня" uri="files/docs/daily-schedule.pdf" %}

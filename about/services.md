@@ -32,8 +32,8 @@ title: Услуги Центра
 * Правила приема
 * Учебный план
 * {% include doc-link.html text="Программы" uri="files/services/programs.docx" %}
-* Кружки
-* Педагогический состав
+* {% include doc-link.html text="Кружки" uri="files/services/study-clubs.docx" %}
+* {% include doc-link.html text="Педагогический состав" uri="files/services/pedagogical-staff.docx" %}
 * {% include doc-link.html text="Кадровое обеспечение" uri="files/services/staffing.docx" %}
 * Материально-техническое обеспечение
 

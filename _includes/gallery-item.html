@@ -3,17 +3,32 @@
     {% assign url_prefix = site.baseurl | append:"/" %}
     {% assign image = include.image | prepend:url_prefix %}
 
+    {% assign old_suffix_large = "_thumb_l" %}
+    {% assign old_suffix_medium = "_thumb_m" %}
+    {% assign image_test = image | replace:old_suffix_large,"" %}
+    {% if image_test == image %}
+        {% assign has_old_suffix = false %}
+    {% else %}
+        {% assign has_old_suffix = true %}
+    {% endif %}
+
     {% assign thumb_strlen = include.thumb | size %}
     {% if thumb_strlen > 0 %}
         {% assign thumb = include.thumb | prepend:url_prefix %}
-    {% else %}
+    {% elsif has_old_suffix %}
         {% assign thumb = image | replace:"_thumb_l","_thumb_m" %}
+    {% else %}
+        {% assign thumb = image | replace:".jp","_m.jp" %}
     {% endif %}
 
     {% assign caption = include.caption %}
     {% assign caption_strlen = caption | size %}
     {% unless caption_strlen > 0 %}
-        {% assign caption = image | split:"." | first | split:"_" | last %}
+        {% if has_old_suffix %}
+            {% assign caption = image | split:"." | first | split:"_" | last %}
+        {% else %}
+            {% assign caption = image | split:"." | first | split:"/" | last %}
+        {% endif %}
     {% endunless %}
 
 {% endcapture %}{% assign devnull = nil %}

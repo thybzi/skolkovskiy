@@ -1,0 +1,5 @@
+{% capture devnull %}
+    {% assign src = "https://www.youtube.com/embed/" | append:include.id %}
+    {% assign width = include.width | default:560 %}
+    {% assign height = include.height | default:315 %}
+{% endcapture %}{% assign devnull = nil %}{% include iframe-video.html src=src width=width height=height %}

@@ -20,7 +20,7 @@ title: Наши достижения
     files/awards/2017/5842.jpg|files/awards/2017/5842_m.jpg
     files/awards/2017/5843.jpg|files/awards/2017/5843_m.jpg
     files/life/2017-07-28_best-caregiver/mm1st.jpg|files/life/2017-07-28_best-caregiver/mm1st_m.jpg
-    files/awards/2017/wa0002.jpg|files/awards/2017/wa0002_m.jpg
+    files/life/2017-09-02_quests/wa0002.jpg
 {% endcapture %}
 {% include gallery_custom.html items=gallery_items %}
 

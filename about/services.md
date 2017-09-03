@@ -29,8 +29,9 @@ title: Услуги Центра
 
 Численность обучающихся: 99 чел.
 
-* Правила приема
-* Учебный план
+* {% include doc-link.html text="Правила приёма" uri="files/services/admission-rules.pdf" %}
+* {% include doc-link.html text="Учебный план" uri="files/services/study-plan.pdf" %}
+* {% include doc-link.html text="План воспитательной работы" uri="files/services/upbringing-plan.docx" %}
 * {% include doc-link.html text="Программы" uri="files/services/programs.docx" %}
 * {% include doc-link.html text="Кружки" uri="files/services/study-clubs.docx" %}
 * {% include doc-link.html text="Педагогический состав" uri="files/services/pedagogical-staff.docx" %}

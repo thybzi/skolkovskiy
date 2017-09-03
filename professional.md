@@ -9,18 +9,17 @@ title: Специалистам
 * {% include doc-link.html text="Структура организации" uri="files/professional/structure.docx" %}
 * {% include doc-link.html text="Опыт работы за последние 5 лет" uri="files/professional/achievements.docx" %}
 * {% include doc-link.html text="Стандарты предоставляемых социальных услуг" uri="files/professional/social-services-standards.docx" %}
-* Методическое объединение
+* {% include doc-link.html text="Положение о методическом объединении" uri="files/professional/methodical-association.docx" %}
 
 #### Методические пособия
 * {% include doc-link.html text="Развивающий уход за детьми с тяжелыми и множественными нарушениями развития" uri="files/professional/developing-care.pdf" %}
 
 #### Отчеты
-* Отчёт директора
+* Отчёт директора:
+  {% include doc-link.html text="2016" uri="files/professional/director-report_2016.docx" %} | 
+  2017
 * Отчёт Попечительского совета: 
   {% include doc-link.html text="2016" uri="files/docs/trustee-board-report_2016.pdf" %} | 
-  2017
-* Отчёт о хозяйственной деятельности: 
-  2016 | 
   2017
 * Отчёт о самообследовании качества услуг:
   2016 |

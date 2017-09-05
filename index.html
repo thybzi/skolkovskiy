@@ -47,7 +47,7 @@ layout: start
 
 <div class="bd">
     <div class="bd1">
-        {% assign post = site.posts | where_exp:"announce_title","announce_title" | first %}
+        {% assign post = site.posts | where_exp:"announce_title","announce_title" | sort:"date" | last %}
         <div class="bd_title"><div>{{ post.announce_title | first }} <span>{{ post.announce_title | last }}</span></div></div>
         <div class="bd_content">
             <div>{{ post.excerpt }}</div>

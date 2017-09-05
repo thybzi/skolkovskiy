@@ -31,14 +31,10 @@
             <ul>
             {% for i in (1..include.items_count) %}
                 <li>
-                    <a href="{{ site.baseurl }}/" target="_self">
-                        <img src="{{ site.baseurl }}/files/slider/{{ i }}.jpg" width="928" height="373" class="fade" alt="">
-                    </a>
-                    <div class="label_text"></div>
+                    <img src="{{ site.baseurl }}/files/slider/{{ i }}.jpg" class="fade" alt="">
                 </li>
             {% endfor %}
             </ul>
         </div>
-        <div style="clear:both;"></div>
     </div>
 </div>

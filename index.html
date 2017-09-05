@@ -3,41 +3,7 @@ title: Главная
 layout: start
 ---
 
-<div class="slider">
-
-    <script>
-        jQuery(document).ready(function() {
-            jQuery('.box_skitter_id').skitter({
-                velocity: 1,
-                interval: 5000,
-                auto_play: true,
-                focus: false,
-                focus_position: 'center',
-                numbers:true,	label: true,
-                hideTools: false,
-                fullscreen: false,
-                width_label: 'null',
-                show_randomly: false,
-                controls: false,
-                controls_position: 'center',
-                progressbar: false,
-                enable_navigation_keys: false,
-                animateNumberOut: {backgroundColor:'#333333', color:'#FFFFFF'},
-                animateNumberOver: {backgroundColor:'#000000', color:'#FFFFFF'},
-                animateNumberActive: {backgroundColor:'#CC3333', color:'#FFFFFF'},
-                numbers_align: 'right'
-            });
-        });
-    </script>
-
-    <div class="mod_jt_skitter_slideshow_img ">
-        <div class="box_skitter box_skitter_id">
-            <ul>
-                <li><a href="/" target="_self"><img src="{{ site.baseurl }}/files/slider/1.jpg" width="928" height="373" class="fade"  alt=""/></a><div class="label_text"></div></li><li><a href="/" target="_self"><img src="{{ site.baseurl }}/files/slider/2.jpg" width="928" height="373" class="fade"  alt=""/></a><div class="label_text"></div></li><li><a href="/" target="_self"><img src="{{ site.baseurl }}/files/slider/3.jpg" width="928" height="373" class="fade"  alt=""/></a><div class="label_text"></div></li><li><a href="/" target="_self"><img src="{{ site.baseurl }}/files/slider/4.jpg" width="928" height="373" class="fade"  alt=""/></a><div class="label_text"></div></li><li><a href="/" target="_self"><img src="{{ site.baseurl }}/files/slider/5.jpg" width="928" height="373" class="fade"  alt=""/></a><div class="label_text"></div></li><li><a href="/" target="_self"><img src="{{ site.baseurl }}/files/slider/6.jpg" width="928" height="373" class="fade"  alt=""/></a><div class="label_text"></div></li><li><a href="/" target="_self"><img src="{{ site.baseurl }}/files/slider/7.jpg" width="928" height="373" class="fade"  alt=""/></a><div class="label_text"></div></li>		</ul>
-        </div>
-        <div style="clear:both;"></div>
-    </div>
-</div>
+{% include slider.html items_count=7 %}
 
 <div class="spacer13"></div>
 

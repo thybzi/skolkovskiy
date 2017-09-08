@@ -1040,11 +1040,17 @@ img {
     background-image: none; /* thybzi */
 }
 
+.bd_content ul,
 .arrow {
     padding-left: 12px;
     margin: 0px;
 }
 
+.bd_content div ul {
+    margin-left: -12px;
+}
+
+.bd_content ul li,
 .arrow li {
     background-image: url(../images/arrow.png);
     background-position: left 4px;

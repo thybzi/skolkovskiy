@@ -1,0 +1,24 @@
+{% assign post = include.post %}
+<div class="posts-item">
+    {% if post.images %}
+        {% capture devnull %}
+            {% assign dateslug = post.url | split:"/" | last %}
+            {% assign dir = "files/life/" | append:dateslug | append:"/" %}
+            {% assign cover_image_data = post.images[post.cover_image_key] | split:'|' %}
+            {% assign image = cover_image_data[0] | strip | prepend:dir %}
+            {% assign thumb = cover_image_data[1] | strip %}
+            {% assign thumb_strlen = thumb | size %}
+            {% if thumb_strlen > 0 %}
+                {% assign thumb = thumb | prepend:dir %}
+            {% endif %}
+            {% assign caption = cover_image_data[2] | strip %}
+        {% endcapture %}{% assign devnull = nil %}
+        {% include gallery-item.html image=image thumb=thumb caption=caption %}
+    {% endif %}
+    <h2>{{ post.title }}</h2>
+    <dl class="article-info">
+        <dd class="create">{{ post.date | date:"%d.%m.%Y" }}</dd>
+    </dl>
+    {{ post.excerpt }}
+    <p class="readmore"><a href="{{ post.url | prepend:site.baseurl }}">Подробнее...</a></p>
+</div>

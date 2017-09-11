@@ -11,6 +11,9 @@ collections:
   albums:
     output: true
     permalink: /gallery/:path/
+  montessori:
+    output: true
+    permalink: /professional/montessori/:path/
   children:
     output: false
 
@@ -24,6 +27,13 @@ defaults:
     scope:
       path: ""
       type: posts
+    values:
+      layout: "post"
+      cover_image_key: 0
+  -
+    scope:
+      path: ""
+      type: montessori
     values:
       layout: "post"
       cover_image_key: 0

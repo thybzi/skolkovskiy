@@ -36,7 +36,7 @@ title: Услуги Центра
 * {% include doc-link.html text="Кружки" uri="files/services/study-clubs.docx" %}
 * {% include doc-link.html text="Педагогический состав" uri="files/services/pedagogical-staff.docx" %}
 * {% include doc-link.html text="Кадровое обеспечение" uri="files/services/staffing.docx" %}
-* Материально-техническое обеспечение
+* {% include doc-link.html text="Материально-техническое обеспечение" uri="files/services/logistic-support.docx" %}
 
 По Федеральному закону от 28 декабря 2013 г. № 442-ФЗ «Об основах социального обслуживания граждан в Российской
 Федерации» Центр оказывает следующие виды услуг:

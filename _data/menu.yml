@@ -8,13 +8,15 @@
     - [ Услуги Центра, "/about/services/" ]
     - [ Вакансии, "/about/vacancies/" ]
     - [ Как нам помочь, "/about/help/" ]
-    - [ Поздравь ребенка, "/about/birthdays/" ]
+    - [ Галерея, "/about/gallery/" ]
 - [ Наши достижения, "/awards/" ]
-- [ Галерея, "/gallery/" ]
 - [ Новости, "/life/" ]
 -
-   - Специалистам
-   - "/professional/"
+   - Проекты
+   - "/projects/"
    -
-     - [ Монтессори-технологии в Центре, "/professional/montessori/" ]
+     - [ Поздравь ребенка, "/projects/birthdays/" ]
+     - [ Помощь пожилым людям, "/projects/eldery-help/" ]
+     - [ Монтессори-технологии в Центре, "/projects/montessori/" ]
+- [ Специалистам, "/professional/" ]
 - [ Контакты, "/contacts/" ]

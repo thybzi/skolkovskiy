@@ -10,10 +10,13 @@ gems: [jekyll-paginate]
 collections:
   albums:
     output: true
-    permalink: /gallery/:path/
+    permalink: /about/gallery/:path/
   montessori:
     output: true
-    permalink: /professional/montessori/:path/
+    permalink: /projects/montessori/:path/
+  elderyhelp:
+    output: true
+    permalink: /projects/eldery-help/:path/
   children:
     output: false
 
@@ -38,6 +41,14 @@ defaults:
       layout: "post"
       cover_image_key: 0
       files_subdir: montessori
+  -
+    scope:
+      path: ""
+      type: elderyhelp
+    values:
+      layout: "post"
+      cover_image_key: 0
+      files_subdir: eldery-help
   -
     scope:
       path: ""

@@ -6,7 +6,7 @@ title: Монтессори-технологии в Центре
 
     {% assign montessori_posts = site.montessori | order:"slug" | reverse %}
     {% for post in montessori_posts %}
-    {% include post-preview.html post=post %}
+    {% include post-preview.html post=post subdir="montessori" %}
     {% endfor %}
 
 </div>

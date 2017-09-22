@@ -1,6 +1,7 @@
 {% capture devnull %}
     {% assign dateslug = include.post.url | split:"/" | last %}
-    {% assign dir = site.basedir | append:"/files/life/" | append:dateslug | append:"/" %}
+    {% assign subdir = include.subdir | default:"life" %}
+    {% assign dir = site.basedir | append:"/files/" | append:subdir | append:"/" | append:dateslug | append:"/" %}
     {% assign src = include.file | prepend:dir %}
     {% assign type = include.type | default:'video/mp4; codecs="avc1.42E01E, mp4a.40.2"' %}
     {% assign width = include.width | default:640 %}

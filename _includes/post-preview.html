@@ -3,7 +3,8 @@
     {% if post.images %}
         {% capture devnull %}
             {% assign dateslug = post.url | split:"/" | last %}
-            {% assign dir = "files/life/" | append:dateslug | append:"/" %}
+            {% assign subdir = include.subdir | default:"life" %}
+            {% assign dir = "files/" | append:subdir | append:"/" | append:dateslug | append:"/" %}
             {% assign cover_image_data = post.images[post.cover_image_key] | split:'|' %}
             {% assign image = cover_image_data[0] | strip | prepend:dir %}
             {% assign thumb = cover_image_data[1] | strip %}

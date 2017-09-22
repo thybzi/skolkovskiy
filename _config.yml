@@ -37,6 +37,7 @@ defaults:
     values:
       layout: "post"
       cover_image_key: 0
+      files_subdir: montessori
   -
     scope:
       path: ""

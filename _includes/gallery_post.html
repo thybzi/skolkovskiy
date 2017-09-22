@@ -1,4 +1,5 @@
 {% capture devnull %}
+    {% assign subdir = include.subdir | default:"life" %}
     {% if include.post %}
         {% assign post = include.post %}
     {% elsif include.post_hru %}
@@ -6,7 +7,7 @@
         {% assign post = site.posts | where:"url",url | first %}
     {% endif %}
     {% assign dateslug = post.url | split:"/" | last %}
-    {% assign dir = "files/life/" | append:dateslug | append:"/" %}
+    {% assign dir = "files/" | append:subdir | append:"/" | append:dateslug | append:"/" %}
 {% endcapture %}{% assign devnull = nil %}
 <div class="phocagallery">
 {% for item in post.images %}

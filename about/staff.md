@@ -128,8 +128,9 @@ title: Педагогические работники
     birthdate="13.09.1975"
     specialization="Педагог-организатор"
     position="Педагог-организатор"
-    education="Высшее, МГПУ, г. Москва, 2004"
+    education="Высшее, МГПУ, г. Москва, 2008"
     experience="13/13"
+    category="Высшая квалифик. категория"
 %}
 
 {% include staff-table__item.html

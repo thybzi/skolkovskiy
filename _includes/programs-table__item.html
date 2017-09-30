@@ -1,0 +1,9 @@
+        <tr>
+            <td class="item-number"></td>
+            <td>{{ include.title }}</td>
+            <td>
+                {% if include.type %}<strong>Направление</strong>: {{ include.type }}.<br>{% endif %}
+                {% if include.aim %}<strong>Цель</strong>: {{ include.aim }}<br>{% endif %}
+                {% if include.age %}<strong>Возраст детей</strong>: {{ include.age }}.{% endif %}
+            </td>
+        </tr>

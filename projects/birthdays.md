@@ -2,7 +2,7 @@
 title: Поздравь ребёнка
 ---
 
-{% include gallery-item.html image="files/birthdays/phoca_thumb_l_o41.jpg" is_right="true" %}
+{% include gallery-item.html image="files/birthdays/birthday.jpg" is_right="true" %}
 
 Изменить мир практически невозможно.  
 **Изменить жизнь конкретного маленького человека вполне реально!**

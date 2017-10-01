@@ -163,6 +163,7 @@ title: Педагогические работники
 
 {% include staff-table__item.html
     name="Халилова Екатерина Тагировна"
+    birthdate="23.02.1979"
     specialization="Специальная психология"
     position="Педагог-психолог"
     education="Высшее, МГПУ, 2004"

@@ -135,8 +135,8 @@ title: Педагогические работники
 
 {% include staff-table__item.html
     name="Дуплищева Ирина Александровна"
-    birthdate="15.05.1987"
-    specialization="Логопедия"
+    birthdate="15.05.1987"
+    specialization="Логопедия"
     position="Учитель-дефектолог"
     education="Высшее, МГГУ им. Шолохова, г. Москва, 2015"
     experience="1"
@@ -163,11 +163,11 @@ title: Педагогические работники
 
 {% include staff-table__item.html
     name="Халилова Екатерина Тагировна"
-    birthdate="23.02.1979"
-    specialization="Специальная психология"
-    position="Педагог-психолог"
-    education="Высшее, МГПУ, 2004"
-    experience="13"
+    birthdate="23.02.1979"
+    specialization="Специальная психология"
+    position="Педагог-психолог"
+    education="Высшее, МГПУ, 2004"
+    experience="13"
 %}
 
 {% include staff-table__end.html %}

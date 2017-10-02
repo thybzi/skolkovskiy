@@ -405,17 +405,17 @@ img {
 
 .top_menu > ul > li > ul > li > a {
     /*height: 50px;*/
-    height: 34px; /* thybzi */
     /*line-height: 50px;*/
-    line-height: 34px; /* thybzi */
+    line-height: 18px; /* thybzi */
     color: #191210;
     display: block;
     /*font-size: 13px;*/
     font-size: 12px; /* thybzi */
     text-decoration: none;
     /*width: 189px;*/
-    width: 254px; /* thybzi */
-    padding-left: 11px;
+    width: 243px; /* thybzi */
+    /*padding-left: 11px;*/
+    padding: 8px 11px; /* thybzi */
 }
 
 .top_menu > ul > li > ul > li > a:hover {

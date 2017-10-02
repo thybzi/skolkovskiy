@@ -22,6 +22,8 @@
         {% assign is_current = false %}
     {% endif %}
 
+    {% assign is_current = false %}
+
 {% endcapture %}{% assign devnull = nil %}
     <li class="item {% if is_current %}active{% endif %}"><a href="{{ site.baseurl }}{{ uri }}">{{ title }}</a>{% if is_nested %}
         <ul>

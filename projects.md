@@ -3,6 +3,7 @@ title: Проекты
 ---
 
 Специальные проекты нашего Центра:
+* [Ищу маму]({{site.baseurl}}/projects/missing-you/)
 * [Поздравь ребёнка]({{site.baseurl}}/projects/birthdays/)
 * [Помощь пожилым людям]({{site.baseurl}}/projects/eldery-help/)
 * [Монтессори-технологии в Центре]({{site.baseurl}}/projects/montessori/)

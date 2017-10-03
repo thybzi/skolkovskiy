@@ -1,0 +1,12 @@
+---
+title: Ищу маму
+---
+
+<div class="blog">
+
+    {% assign children = site.children | where_exp:"item","item.missingyou_ordinal > 0" | sort:"missingyou_ordinal" %}
+    {% for item in children %}
+    {% include post-preview.html post=item title=item.name %}
+    {% endfor %}
+
+</div>

@@ -33,6 +33,7 @@ defaults:
     values:
       layout: "post"
       cover_image_key: 0
+      files_subdir: life
   -
     scope:
       path: ""
@@ -56,3 +57,11 @@ defaults:
     values:
       layout: "album"
       cover_image_key: 0
+  -
+    scope:
+      path: ""
+      type: children
+    values:
+      single_image: true
+      files_subdir: children
+      no_more_link: true

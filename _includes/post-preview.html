@@ -1,9 +1,15 @@
 {% assign post = include.post %}
 <div class="posts-item">
-    {% if post.images %}
-        {% capture devnull %}
-            {% assign dateslug = post.url | split:"/" | last %}
-            {% assign subdir = include.subdir | default:"life" %}
+    {% capture devnull %}
+        {% assign title = include.title | default:post.title %}
+        {% assign dateslug = post.url | split:"/" | last %}
+        {% assign subdir = post.files_subdir %}
+
+        {% assign thumb = nil %}
+        {% assign image = nil %}
+        {% if post.single_image %}
+            {% assign image = "files/" | append:subdir | append:"/" | append:dateslug | append:".jpg" %}
+        {% elsif post.images %}
             {% assign dir = "files/" | append:subdir | append:"/" | append:dateslug | append:"/" %}
             {% assign cover_image_data = post.images[post.cover_image_key] | split:'|' %}
             {% assign image = cover_image_data[0] | strip | prepend:dir %}
@@ -13,15 +19,19 @@
                 {% assign thumb = thumb | prepend:dir %}
             {% endif %}
             {% assign caption = cover_image_data[2] | strip %}
-        {% endcapture %}{% assign devnull = nil %}
+        {% endif %}
+    {% endcapture %}{% assign devnull = nil %}
+    {% if image %}
         {% include gallery-item.html image=image thumb=thumb caption=caption %}
     {% endif %}
-    <h2>{{ post.title }}</h2>
+    <h2>{{ title }}</h2>
     {% if post.date %}
     <dl class="article-info">
         <dd class="create">{{ post.date | date:"%d.%m.%Y" }}</dd>
     </dl>
     {% endif %}
     {{ post.excerpt }}
+    {% unless post.no_more_link %}
     <p class="readmore"><a href="{{ post.url | prepend:site.baseurl }}">Подробнее...</a></p>
+    {% endunless %}
 </div>

@@ -1203,4 +1203,20 @@ table.striped.compact td {
     padding: 3px 6px;
 }
 
+.columns-container::after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+.column-left {
+    float: left;
+}
+
+.column-right {
+    float: left;
+}
+
 /* }} thybzi */

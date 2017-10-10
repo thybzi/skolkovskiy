@@ -1,3 +1,24 @@
+- [ Главная, "/" ]
+- [ Наши достижения, "/awards/" ]
+-
+  - Наша жизнь
+  - "/life/"
+  -
+    - [ Новости, "/life/" ]
+    - [ Галерея, "/about/gallery/" ]
+    - [ Наша деятельность, "/about/activity" ]
+    - [ Услуги Центра, "/about/services/" ]
+    - [ Специалистам, "/professional/" ]
+    - [ Вакансии, "/about/vacancies/" ]
+    - [ Как нам помочь, "/about/help/" ]
+-
+   - Проекты
+   - "/projects/"
+   -
+     - [ Ищу маму, "/projects/missing-you/" ]
+     - [ Поздравь ребёнка, "/projects/birthdays/" ]
+     - [ Помощь пожилым людям, "/projects/eldery-help/" ]
+     - [ Монтессори-технологии в Центре, "/projects/montessori/" ]
 -
   - Сведения об образовательной организации
   - "/information/"
@@ -9,27 +30,4 @@
     - [ Руководство. Педагогический (научно-педагогический) состав, "/information/staff/" ]
     - [ Материально-техническое обеспечение и оснащенность образовательного процесса, "/information/logistic/" ]
     - [ Вакантные места для приема (перевода), "/information/places/" ]
-- [ Наши достижения, "/awards/" ]
--
-  - Наша жизнь
-  - "/life/"
-  -
-    - [ Новости, "/life/" ]
-    - [ Галерея, "/about/gallery/" ]
-    - [ Наша деятельность, "/about/activity" ]
-    - [ Услуги Центра, "/about/services/" ]
-    - [ Программы, "/about/programs/" ]
-    - [ Администрация, "/about/administration/" ]
-    - [ Педагогические работники, "/about/staff/" ]
-    - [ Вакансии, "/about/vacancies/" ]
-    - [ Как нам помочь, "/about/help/" ]
--
-   - Проекты
-   - "/projects/"
-   -
-     - [ Ищу маму, "/projects/missing-you/" ]
-     - [ Поздравь ребёнка, "/projects/birthdays/" ]
-     - [ Помощь пожилым людям, "/projects/eldery-help/" ]
-     - [ Монтессори-технологии в Центре, "/projects/montessori/" ]
-- [ Специалистам, "/professional/" ]
 - [ Контакты, "/contacts/" ]

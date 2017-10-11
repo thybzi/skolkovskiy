@@ -7,8 +7,10 @@
 
         {% assign thumb = nil %}
         {% assign image = nil %}
+        {% assign caption = nil %}
         {% if post.single_image %}
             {% assign image = "files/" | append:subdir | append:"/" | append:dateslug | append:".jpg" %}
+            {% assign caption = title %}
         {% elsif post.images %}
             {% assign dir = "files/" | append:subdir | append:"/" | append:dateslug | append:"/" %}
             {% assign cover_image_data = post.images[post.cover_image_key] | split:'|' %}

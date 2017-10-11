@@ -8,6 +8,8 @@ title: Наши достижения
 ## 2017
 
 {% capture gallery_items %}
+    files/awards/2017/4242.jpg
+    files/awards/2017/4243.jpg
     files/awards/2017/phoca_thumb_l_1.jpg
     files/awards/2017/5834.jpg|files/awards/2017/5834_m.jpg
     files/awards/2017/5835.jpg|files/awards/2017/5835_m.jpg

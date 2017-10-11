@@ -1124,6 +1124,12 @@ form.simpleForm textarea.inputtext_small {
 }
 
 /* thybzi {{ */
+
+.phocagallery-box-file {
+    background-color: #fcfcfc;
+    border: 1px solid #e8e8e8;
+}
+
 .video-container {
     text-align: center;
 }

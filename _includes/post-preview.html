@@ -23,9 +23,8 @@
             {% assign caption = cover_image_data[2] | strip %}
         {% endif %}
     {% endcapture %}{% assign devnull = nil %}
-    {% if image %}
-        {% include gallery-item.html image=image thumb=thumb caption=caption %}
-    {% endif %}
+
+    {% include gallery-item.html image=image thumb=thumb caption=caption %}
     <h2>{{ title }}</h2>
     {% if post.date %}
     <dl class="article-info">

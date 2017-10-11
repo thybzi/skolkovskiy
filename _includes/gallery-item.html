@@ -1,5 +1,10 @@
 {% capture devnull %}
 
+{% assign image = nil %}
+{% assign thumb = nil %}
+{% assign caption = nil %}
+
+{% if include.image %}
     {% assign url_prefix = site.baseurl | append:"/" %}
     {% assign image = include.image | prepend:url_prefix %}
 
@@ -30,9 +35,11 @@
             {% assign caption = image | split:"." | first | split:"/" | last %}
         {% endif %}
     {% endunless %}
+{% endif %}
 
 {% endcapture %}{% assign devnull = nil %}
-<div class="phocagallery-box-file pgplugin1 {% if include.is_right %}right{% endif %}">
+<div class="phocagallery-box-file {% if image %}pgplugin1{% endif %} {% if include.is_right %}right{% endif %}">
+    {% if image %}
     <div class="phocagallery-box-file-first">
         <div class="phocagallery-box-file-second">
             <div class="phocagallery-box-file-third">
@@ -42,4 +49,5 @@
             </div>
         </div>
     </div>
+    {% endif %}
 </div>

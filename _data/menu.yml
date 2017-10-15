@@ -6,11 +6,11 @@
   -
     - [ Новости, "/life/" ]
     - [ Галерея, "/gallery/" ]
-    - [ Наша деятельность, "/about/activity" ]
-    - [ Услуги Центра, "/about/services/" ]
+    - [ Наша деятельность, "/activity/" ]
+    - [ Услуги Центра, "/services/" ]
     - [ Специалистам, "/professional/" ]
-    - [ Вакансии, "/about/vacancies/" ]
-    - [ Как нам помочь, "/about/help/" ]
+    - [ Вакансии, "/vacancies/" ]
+    - [ Как нам помочь, "/help/" ]
 -
    - Проекты
    - "/projects/"

@@ -65,58 +65,58 @@ title: Деятельность учреждения
 
 {% capture gallery_items %}
     files/gallery/childrens-house/phoca_thumb_l_o1.jpg
-    files/about/phoca_thumb_l_11.jpg
-    files/about/phoca_thumb_l_21.jpg
-    files/about/phoca_thumb_l_22.jpg
-    files/about/phoca_thumb_l_23.jpg
-    files/about/phoca_thumb_l_24.jpg
+    files/activity/phoca_thumb_l_11.jpg
+    files/activity/phoca_thumb_l_21.jpg
+    files/activity/phoca_thumb_l_22.jpg
+    files/activity/phoca_thumb_l_23.jpg
+    files/activity/phoca_thumb_l_24.jpg
 {% endcapture %}
 {% include gallery_custom.html items=gallery_items %}
 
 ### Коррекционно-развивающие занятия с младшими воспитанниками
 {% capture gallery_items %}
-    files/about/phoca_thumb_l_31.jpg
-    files/about/phoca_thumb_l_32.jpg
-    files/about/phoca_thumb_l_33.jpg
+    files/activity/phoca_thumb_l_31.jpg
+    files/activity/phoca_thumb_l_32.jpg
+    files/activity/phoca_thumb_l_33.jpg
 {% endcapture %}
 {% include gallery_custom.html items=gallery_items %}
 
 ### Занятия с логопедом, дефектологом
 {% capture gallery_items %}
-    files/about/phoca_thumb_l_41.jpg
-    files/about/phoca_thumb_l_42.jpg
-    files/about/phoca_thumb_l_43.jpg
+    files/activity/phoca_thumb_l_41.jpg
+    files/activity/phoca_thumb_l_42.jpg
+    files/activity/phoca_thumb_l_43.jpg
 {% endcapture %}
 {% include gallery_custom.html items=gallery_items %}
 
 ### Занятия в танцевальном ансамбле «Топотушки»
 {% capture gallery_items %}
-    files/about/phoca_thumb_l_51.jpg
-    files/about/phoca_thumb_l_52.jpg
-    files/about/phoca_thumb_l_61.jpg
+    files/activity/phoca_thumb_l_51.jpg
+    files/activity/phoca_thumb_l_52.jpg
+    files/activity/phoca_thumb_l_61.jpg
 {% endcapture %}
 {% include gallery_custom.html items=gallery_items %}
 
 ### Работы детей кружка «Умелые ручки» и «Оригами»
 {% capture gallery_items %}
-    files/about/phoca_thumb_l_71.jpg
-    files/about/phoca_thumb_l_72.jpg
-    files/about/phoca_thumb_l_73.jpg
+    files/activity/phoca_thumb_l_71.jpg
+    files/activity/phoca_thumb_l_72.jpg
+    files/activity/phoca_thumb_l_73.jpg
 {% endcapture %}
 {% include gallery_custom.html items=gallery_items %}
 
 ### Занятия по программе Монтессори
 {% capture gallery_items %}
-    files/about/phoca_thumb_l_81.jpg
-    files/about/phoca_thumb_l_82.jpg
-    files/about/phoca_thumb_l_101.jpg
+    files/activity/phoca_thumb_l_81.jpg
+    files/activity/phoca_thumb_l_82.jpg
+    files/activity/phoca_thumb_l_101.jpg
 {% endcapture %}
 {% include gallery_custom.html items=gallery_items %}
 
 ### Спортивно-физкультурные занятия
 {% capture gallery_items %}
-    files/about/phoca_thumb_l_91.jpg
-    files/about/phoca_thumb_l_92.jpg
-    files/about/phoca_thumb_l_93.jpg
+    files/activity/phoca_thumb_l_91.jpg
+    files/activity/phoca_thumb_l_92.jpg
+    files/activity/phoca_thumb_l_93.jpg
 {% endcapture %}
 {% include gallery_custom.html items=gallery_items %}

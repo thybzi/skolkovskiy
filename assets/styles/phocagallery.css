@@ -1088,6 +1088,10 @@ div.window-container table tr td {
 	padding: 0;
 }
 
+.phocagallery-box-file img {
+	vertical-align: top;
+}
+
 .phocagallery-box-file.right {
 	/*position: relative;*/
 	float: right;

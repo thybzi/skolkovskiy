@@ -35,6 +35,8 @@
             {% assign caption = image | split:"." | first | split:"/" | last %}
         {% endif %}
     {% endunless %}
+{% elsif include.proceed_url %}
+    {% assign caption = include.caption %}
 {% endif %}
 
 {% endcapture %}{% assign devnull = nil %}
@@ -43,11 +45,17 @@
     <div class="phocagallery-box-file-first">
         <div class="phocagallery-box-file-second">
             <div class="phocagallery-box-file-third">
+                {% if include.proceed_url %}
+                    <a title="{{ caption }}" href="{{ include.proceed_url }}">
+                {% else %}
                     <a class="slimbox" title="{{ caption }}" href="{{ image }}" rel="lightbox-group">
+                {% endif %}
                         <img class="pg-image" src="{{ thumb }}" alt="{{ caption }}">
                     </a>
             </div>
         </div>
     </div>
+    {% elsif include.proceed_url %}
+    <a class="fullsize-link" href="{{ include.proceed_url }}" {% if caption %}title="{{ caption }}"{% endif %}></a>
     {% endif %}
 </div>

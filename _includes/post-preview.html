@@ -7,10 +7,14 @@
 
         {% assign thumb = nil %}
         {% assign image = nil %}
-        {% assign caption = nil %}
+        {% assign proceed_url = nil %}
+
+        {% unless post.no_more_link %}
+            {% assign proceed_url = post.url | prepend:site.baseurl %}
+        {% endunless %}
+
         {% if post.single_image %}
             {% assign image = "files/" | append:subdir | append:"/" | append:dateslug | append:".jpg" %}
-            {% assign caption = title %}
         {% elsif post.images %}
             {% assign dir = "files/" | append:subdir | append:"/" | append:dateslug | append:"/" %}
             {% assign cover_image_data = post.images[post.cover_image_key] | split:'|' %}
@@ -20,19 +24,26 @@
             {% if thumb_strlen > 0 %}
                 {% assign thumb = thumb | prepend:dir %}
             {% endif %}
-            {% assign caption = cover_image_data[2] | strip %}
         {% endif %}
     {% endcapture %}{% assign devnull = nil %}
 
-    {% include gallery-item.html image=image thumb=thumb caption=caption %}
+    {% include gallery-item.html image=image thumb=thumb caption=title proceed_url=proceed_url %}
+
+    {% if proceed_url %}
+    <h2><a href="{{ proceed_url }}">{{ title }}</a></h2>
+    {% else %}
     <h2>{{ title }}</h2>
+    {% endif %}
+
     {% if post.date %}
     <dl class="article-info">
         <dd class="create">{{ post.date | date:"%d.%m.%Y" }}</dd>
     </dl>
     {% endif %}
+
     {{ post.excerpt }}
-    {% unless post.no_more_link %}
-    <p class="readmore"><a href="{{ post.url | prepend:site.baseurl }}">Подробнее...</a></p>
-    {% endunless %}
+
+    {% if proceed_url %}
+    <p class="readmore"><a href="{{ proceed_url }}">Подробнее...</a></p>
+    {% endif %}
 </div>

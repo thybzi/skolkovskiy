@@ -1246,4 +1246,14 @@ table.striped.compact td {
     content: ' /';
 }
 
+.content h2 a {
+    text-decoration: none;
+}
+
+.phocagallery-box-file .fullsize-link {
+    display: block;
+    width: 270px;
+    height: 218px;
+}
+
 /* }} thybzi */

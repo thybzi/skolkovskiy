@@ -54,7 +54,7 @@ title: Документы
 * {% include doc-link.html text="Отчет Попечительского совета (2016)" uri="files/docs/trustee-board-report_2016.pdf" %}
 * {% include doc-link.html text="Информация о результатах проведенных проверок (2016–2017)" uri="files/docs/inspections_2016-2017.docx" %}
 * Отчёт директора:
-  {% include doc-link.html text="2016" uri="files/professional/director-report_2016.docx" %} |
+  {% include doc-link.html text="2016" uri="files/docs/director-report_2016.docx" %} |
   2017
 
 ### Другие документы

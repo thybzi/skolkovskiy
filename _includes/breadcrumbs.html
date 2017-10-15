@@ -1,0 +1,10 @@
+{% capture devnull %}
+    {% capture breadcrumbs_raw %}{% include _helpers/breadcrumbs.html %}{% endcapture %}
+    {% assign breadcrumbs = breadcrumbs_raw | split:"|" %}
+{% endcapture %}
+<ul class="breadcrumbs">
+{% for item in breadcrumbs %}
+    {% assign data = item | split:":" %}
+    <li><a href="{{ site.baseurl }}{{ data | first }}">{{ data | last }}</a></li>
+{% endfor %}
+</ul>

@@ -5,6 +5,7 @@ permalink: /life/:year-:month-:day_:slug/
 excerpt_separator: <!--more-->
 paginate: 5
 paginate_path: "/life/page:num/"
+root_breadcrumb: "/:ЦССВ «Сколковский»"
 gems: [jekyll-paginate]
 
 collections:
@@ -28,12 +29,25 @@ defaults:
       layout: "default"
   -
     scope:
+      path: "projects"
+      type: pages
+    values:
+      section_breadcrumb: "/projects/:Проекты"
+  -
+    scope:
+      path: "information"
+      type: pages
+    values:
+      section_breadcrumb: "/information/:Сведения об образовательной организации"
+  -
+    scope:
       path: ""
       type: posts
     values:
       layout: "post"
       cover_image_key: 0
       files_subdir: life
+      section_breadcrumb: "/life/:Новости"
   -
     scope:
       path: ""
@@ -42,6 +56,7 @@ defaults:
       layout: "post"
       cover_image_key: 0
       files_subdir: montessori
+      section_breadcrumb: "/projects/:Проекты|/projects/montessori/:Монтессори-технологии в Центре"
   -
     scope:
       path: ""
@@ -50,6 +65,7 @@ defaults:
       layout: "post"
       cover_image_key: 0
       files_subdir: eldery-help
+      section_breadcrumb: "/projects/:Проекты|/projects/eldery-help/:Помощь пожилым людям"
   -
     scope:
       path: ""
@@ -57,6 +73,7 @@ defaults:
     values:
       layout: "album"
       cover_image_key: 0
+      section_breadcrumb: "/gallery/:Галерея"
   -
     scope:
       path: ""

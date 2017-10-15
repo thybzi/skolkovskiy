@@ -5,7 +5,7 @@
   - "/life/"
   -
     - [ Новости, "/life/" ]
-    - [ Галерея, "/about/gallery/" ]
+    - [ Галерея, "/gallery/" ]
     - [ Наша деятельность, "/about/activity" ]
     - [ Услуги Центра, "/about/services/" ]
     - [ Специалистам, "/professional/" ]

@@ -10,7 +10,7 @@ gems: [jekyll-paginate]
 collections:
   albums:
     output: true
-    permalink: /about/gallery/:path/
+    permalink: /gallery/:path/
   montessori:
     output: true
     permalink: /projects/montessori/:path/

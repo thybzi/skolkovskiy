@@ -909,6 +909,34 @@ img {
     text-decoration: underline;
 }
 
+
+
+.f_text41 {
+    position: absolute;
+    top: 57px;
+    left: 267px;
+}
+
+.f_text42 {
+    position: absolute;
+    top: 57px;
+    left: 347px;
+}
+
+.f_text43 {
+    position: absolute;
+    top: 57px;
+    left: 427px;
+}
+
+.f_text41 a,
+.f_text42 a,
+.f_text43 a {
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
 .f_text5 {
     position: absolute;
     top: 13px;

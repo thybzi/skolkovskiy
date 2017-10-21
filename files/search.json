@@ -3,14 +3,14 @@ layout: null
 ---
 [
 
-{% assign pages = site.pages | sort:0 %}{% for item in pages %}
+{% assign pages = site.pages | sort:"url" %}{% for item in pages %}
     {% assign url_test = item.url | remove:".json" %}
     {% if url_test == item.url and item.search_exclude != true %}
         {% include _search/json-item.html item=item %}
     {% endif %}
 {% endfor %}
 
-{% assign pages = site.albums | sort:0 %}{% for item in pages %}
+{% assign pages = site.albums | sort:"url" %}{% for item in pages %}
     {% unless item.search_exclude %}
         {% include _search/json-item.html item=item %}
     {% endunless %}

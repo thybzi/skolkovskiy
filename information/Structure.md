@@ -1,5 +1,6 @@
 ---
 title: Структура и органы управления образовательной организацией
+permalink: /information/structure/
 ---
 
 {% include gallery-item.html image="files/docs/structure.jpg" caption="Структура учреждения" is_right="true" %}

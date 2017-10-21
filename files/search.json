@@ -16,19 +16,19 @@ layout: null
     {% endunless %}
 {% endfor %}
 
-{% assign pages = site.posts | sort:"date" %}{% for item in pages %}
+{% assign pages = site.posts | sort:"date" | reverse %}{% for item in pages %}
     {% unless item.search_exclude %}
         {% include _search/json-item.html item=item %}
     {% endunless %}
 {% endfor %}
 
-{% assign pages = site.montessori | sort:"date" %}{% for item in pages %}
+{% assign pages = site.montessori | sort:"date" | reverse %}{% for item in pages %}
     {% unless item.search_exclude %}
         {% include _search/json-item.html item=item %}
     {% endunless %}
 {% endfor %}
 
-{% assign pages = site.elderyhelp | sort:"date" %}{% for item in pages %}
+{% assign pages = site.elderyhelp | sort:"date" | reverse %}{% for item in pages %}
     {% unless item.search_exclude %}
         {% include _search/json-item.html item=item %}
     {% endunless %}

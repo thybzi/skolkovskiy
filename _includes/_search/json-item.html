@@ -3,6 +3,5 @@
     "url": "{{ item.url }}",
     "date": {% if item.date %}"{{ item.date }}"{% else %}null{% endif %},
     "title": "{{ item.title }}",
-    "excerpt": {% include _search/json-excerpt.html item=item %},
     "text": {% include _search/json-text.html text=item.content %}
 },

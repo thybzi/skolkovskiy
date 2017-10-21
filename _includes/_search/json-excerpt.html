@@ -1,5 +1,0 @@
-{% if item.excerpt %}{%
-    include _search/json-text.html text=item.excerpt
-%}{% else %}{%
-    include _search/json-text.html text=item.content max_words=50
-%}{% endif %}

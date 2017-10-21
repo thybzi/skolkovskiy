@@ -22,7 +22,7 @@ layout: null
     {% endunless %}
 {% endfor %}
 
-{% assign pages = site.montessori | sort:"date" | reverse %}{% for item in pages %}
+{% assign pages = site.montessori | sort:"url" | reverse %}{% for item in pages %}
     {% unless item.search_exclude %}
         {% include _search/json-item.html item=item %}
     {% endunless %}

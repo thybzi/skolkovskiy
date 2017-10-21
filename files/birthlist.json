@@ -1,5 +1,5 @@
 ---
-layout: empty
+layout: null
 ---
 {% capture list %}{% include _helpers/birthlist.html omit_monthnames=true %}{% endcapture %}{% assign list = list | split:"|" %}
 [

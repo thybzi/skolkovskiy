@@ -1274,6 +1274,11 @@ table.striped.compact td {
     margin: 0;
 }
 
+.search-results time {
+    font-size: 13px;
+    font-weight: normal;
+}
+
 .search-results p {
     margin: 4px 0 0;
 }

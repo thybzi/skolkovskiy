@@ -45,6 +45,7 @@ search_exclude: true
                         if (~title_lower.indexOf(query_lower) || ~text_lower.indexOf(query_lower)) {
                             matches.push({
                                 url: item.url,
+                                date: item.date,
                                 title: title,
                                 title_lower: title_lower,
                                 text: text,
@@ -60,7 +61,11 @@ search_exclude: true
                             var link_elem = document.createElement('a');
                             var title_elem = document.createElement('h4');
                             var text_elem = document.createElement('p');
-                            title_elem.innerHTML = formatResultText(item.title, item.title_lower, query_lower);
+                            var title_html = formatResultText(item.title, item.title_lower, query_lower);
+                            if (item.date) {
+                                title_html += ' <time>(' + formatDate(item.date) + ')</time>';
+                            }
+                            title_elem.innerHTML = title_html;
                             text_elem.innerHTML = formatResultText(item.text, item.text_lower, query_lower, 30);
                             link_elem.href = '{{ site.baseurl }}' + item.url;
                             link_elem.appendChild(title_elem);
@@ -77,6 +82,15 @@ search_exclude: true
             } else {
                 message_elem.textContent = 'Слишком короткий поисковой запрос. Введите запрос не менее 3 знаков.';
             }
+        }
+
+        function formatDate(date_str) {
+            var date = new Date(date_str);
+            return [
+                ('0' + date.getDate()).slice(-2),
+                ('0' + (date.getMonth() + 1)).slice(-2),
+                date.getFullYear()
+            ].join('.');
         }
 
         function formatResultText(text, text_lower, query_lower, outer_words_count) {

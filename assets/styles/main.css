@@ -885,10 +885,15 @@ img {
     left: 85px;
 }
 
+.f_text2 a {
+    color: #ffffff; /* thybzi */
+}
+
 .f_text3 {
     position: absolute;
     top: 57px;
     left: 85px;
+    color: #ffffff; /* thybzi */
 }
 
 .f_text3 a {
@@ -904,34 +909,6 @@ img {
 }
 
 .f_text4 a {
-    color: #ffffff;
-    font-size: 14px;
-    text-decoration: underline;
-}
-
-
-
-.f_text41 {
-    position: absolute;
-    top: 57px;
-    left: 267px;
-}
-
-.f_text42 {
-    position: absolute;
-    top: 57px;
-    left: 347px;
-}
-
-.f_text43 {
-    position: absolute;
-    top: 57px;
-    left: 427px;
-}
-
-.f_text41 a,
-.f_text42 a,
-.f_text43 a {
     color: #ffffff;
     font-size: 14px;
     text-decoration: underline;

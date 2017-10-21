@@ -1261,4 +1261,21 @@ table.striped.compact td {
     height: 218px;
 }
 
+.search-results li {
+    margin-top: 14px;
+}
+
+.search-results a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.search-results h4 {
+    margin: 0;
+}
+
+.search-results p {
+    margin: 4px 0 0;
+}
+
 /* }} thybzi */

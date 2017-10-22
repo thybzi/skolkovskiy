@@ -1290,4 +1290,9 @@ table.striped.compact td {
     margin: 4px 0 0;
 }
 
+.post-source {
+    font-family: Arial, Tahoma, sans-serif;
+    font-size: 13px;
+}
+
 /* }} thybzi */

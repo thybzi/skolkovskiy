@@ -93,29 +93,35 @@ img {
 
 .top_text1 {
     color: #fff;
-    font-size: 16px;
-    text-transform: uppercase;
+    /*font-size: 16px;*/
+    font-size: 13px;
+    /*text-transform: uppercase;*/
     position: absolute;
     left: 87px;
-    top: 6px;
+    /*top: 6px;*/
+    top: 11px;
 }
 
 .top_text2 {
     color: #fff;
-    font-size: 23px;
-    text-transform: uppercase;
+    /*font-size: 23px;*/
+    font-size: 20px;
+    /*text-transform: uppercase;*/
     position: absolute;
     left: 87px;
-    top: 27px;
+    /*top: 27px;*/
+    top: 28px;
 }
 
 .top_text3 {
     color: #fff;
-    font-size: 16px;
-    text-transform: uppercase;
+    /*font-size: 16px;*/
+    font-size: 13px;
+    /*text-transform: uppercase;*/
     position: absolute;
     left: 87px;
-    top: 61px;
+    /*top: 61px;*/
+    top: 56px;
 }
 
 /* ---------- top_menu ---------- */
@@ -1174,13 +1180,52 @@ form.simpleForm textarea.inputtext_small {
     margin-bottom: 15px;
 }
 
+.dszn-logo {
+    position: absolute;
+    right: 205px;
+    top: 10px;
+    height: 72px;
+}
+
 .special-version-link {
     position: absolute;
-    right: 0;
-    top: 0;
-    width: 50px;
-    height: 50px;
-    background: rgba(0, 0, 0, 0.2) url(../images/special.png) 0 0 no-repeat;
+    right: 6px;
+    top: 6px;
+    width: 136px;
+    height: 38px;
+    padding: 7px 38px 3px 12px;
+    line-height: 17px;
+    color: #fff;
+    font-size: 13px;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.3) url(../images/special.png) 100% 50% no-repeat;
+}
+
+.top-search-form {
+    position: absolute;
+    right: 6px;
+    bottom: 6px;
+    background-color: #fff;
+}
+
+.top-search-form .top-search-input {
+    -webkit-appearance: none;
+    width: 140px;
+    height: 28px;
+    padding: 2px 12px;
+    border-width: 0;
+    vertical-align: middle;
+    font-size: 13px;
+    font-family: inherit;
+    background-color: transparent;
+}
+
+.top-search-form .top-search-button {
+    -webkit-appearance: none;
+    width: 17px;
+    height: 17px;
+    padding: 7px 14px 4px;
+    vertical-align: middle;
 }
 
 table.striped {

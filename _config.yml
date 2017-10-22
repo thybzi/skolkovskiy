@@ -1,7 +1,7 @@
 exclude: [gulpfile.js, package.json, node_modules, Gemfile, Gemfile.lock]
 baseurl: ""
 future: true
-permalink: /life/:year-:month-:day_:slug/
+permalink: /life/:year-:month-:day-:slug/
 excerpt_separator: <!--more-->
 paginate: 5
 paginate_path: "/life/page:num/"

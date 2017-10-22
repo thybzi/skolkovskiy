@@ -6,7 +6,7 @@ excerpt_separator: <!--more-->
 paginate: 5
 paginate_path: "/life/page:num/"
 root_breadcrumb: "/:ЦССВ «Сколковский»"
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 
 collections:
   albums:

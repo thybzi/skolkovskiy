@@ -24,7 +24,7 @@ search_exclude: true
             message_elem = document.getElementById('search_message');
             results_elem = document.getElementById('search_results');
 
-            query = purifyText(decodeURIComponent(location.search.split('?q=').pop()).replace(/\+/g, ' '));
+            query = purifyText(decodeURIComponent(location.search.split('?q=').pop().split('&').shift()).replace(/\+/g, ' '));
             query_lower = query.toLowerCase();
             input_elem.value = query;
 

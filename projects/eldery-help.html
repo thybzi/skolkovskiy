@@ -11,7 +11,7 @@ title: Помощь пожилым людям
 
 <div class="blog">
 
-    {% assign elderyhelp_posts = site.elderyhelp | order:"slug" | reverse %}
+    {% assign elderyhelp_posts = site.elderyhelp | order:"date" | reverse %}
     {% for post in elderyhelp_posts %}
     {% include post-preview.html post=post subdir="eldery-help" %}
     {% endfor %}

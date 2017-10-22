@@ -34,5 +34,11 @@ layout: null
     {% endunless %}
 {% endfor %}
 
+{% assign pages = site.media | sort:"date" | reverse %}{% for item in pages %}
+    {% unless item.search_exclude %}
+        {% include _search/json-item.html item=item %}
+    {% endunless %}
+{% endfor %}
+
     null
 ]

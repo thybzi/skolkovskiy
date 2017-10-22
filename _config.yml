@@ -12,6 +12,9 @@ collections:
   albums:
     output: true
     permalink: /gallery/:path/
+  media:
+    output: true
+    permalink: /media/:path/
   montessori:
     output: true
     permalink: /projects/montessori/:path/
@@ -48,6 +51,15 @@ defaults:
       cover_image_key: 0
       files_subdir: life
       section_breadcrumb: "/life/:Новости"
+  -
+    scope:
+      path: ""
+      type: media
+    values:
+      layout: "post"
+      cover_image_key: 0
+      files_subdir: media
+      section_breadcrumb: "/media/:СМИ о нас"
   -
     scope:
       path: ""

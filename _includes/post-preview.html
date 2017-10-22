@@ -29,6 +29,7 @@
 
     {% include gallery-item.html image=image thumb=thumb caption=title proceed_url=proceed_url %}
 
+    <div class="posts-item-textual">
     {% if proceed_url %}
     <h2><a href="{{ proceed_url }}">{{ title }}</a></h2>
     {% else %}
@@ -46,4 +47,5 @@
     {% if proceed_url %}
     <p class="readmore"><a href="{{ proceed_url }}">Подробнее...</a></p>
     {% endif %}
+    </div>
 </div>

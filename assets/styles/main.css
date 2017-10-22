@@ -1147,8 +1147,15 @@ form.simpleForm textarea.inputtext_small {
 }
 
 .posts-item .phocagallery-box-file {
-    margin-right: 15px;
+    /*margin-right: 15px;*/ /* thybzi */
 }
+
+/* thybzi {{ */
+.posts-item .posts-item-textual {
+    float: right;
+    width: 618px;
+}
+/* }} thybzi */
 
 .posts-item::after {
     content: '';

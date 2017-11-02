@@ -12,6 +12,9 @@ collections:
   albums:
     output: true
     permalink: /gallery/:path/
+  announces:
+    output: true
+    permalink: /announces/:path/
   media:
     output: true
     permalink: /media/:path/
@@ -60,6 +63,15 @@ defaults:
       cover_image_key: 0
       files_subdir: media
       section_breadcrumb: "/media/:СМИ о нас"
+  -
+    scope:
+      path: ""
+      type: announces
+    values:
+      layout: "post"
+      cover_image_key: 0
+      files_subdir: announces
+      section_breadcrumb: "/announces/:Анонсы"
   -
     scope:
       path: ""

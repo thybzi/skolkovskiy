@@ -5,7 +5,7 @@ search_exclude: true
 
 <div class="blog">
 
-{% assign current_timestamp = site.data.settings.current_date | date:"%s" | plus:0 %}
+{% assign current_timestamp = site.time | date:"%s" | plus:0 %}
 {% assign posts = site.announces | order:"date" %}
 {% for post in posts %}
 

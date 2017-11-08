@@ -1,5 +1,5 @@
 {% capture devnull %}
-    {% assign current_year = site.data.settings.current_date | date:"%Y" %}
+    {% assign current_year = site.time | date:"%Y" %}
     {% assign plus_years = include.plus_years | default:0 %}
     {% assign birth_year = include.date | date:"%Y" %}
     {% assign age = current_year | plus:plus_years | minus:birth_year %}

@@ -5,7 +5,7 @@
 
     {% assign months_count = include.months_count | default:3 %}
     {% if months_count > 1 %}{% assign multiple_months = true %}{% endif %}
-    {% assign start_month = site.data.settings.current_date | date:"%-m" %}
+    {% assign start_month = site.time | date:"%-m" %}
     {% assign end_month = start_month | plus:months_count | minus:1 %}
     {% capture months %}
         {% for month_raw in (start_month..end_month) %}

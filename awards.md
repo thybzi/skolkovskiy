@@ -8,6 +8,8 @@ title: Наши достижения
 ## 2017
 
 {% capture gallery_items %}
+    files/awards/2017/2048.jpg
+    files/awards/2017/2049.jpg
     files/awards/2017/brave.jpg
     files/awards/2017/4242.jpg
     files/awards/2017/4243.jpg

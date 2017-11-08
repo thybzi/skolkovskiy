@@ -1346,4 +1346,33 @@ table.striped.compact td {
     font-size: 13px;
 }
 
+
+.calendar {
+    border-collapse: collapse;
+    margin-left: -6px;
+}
+
+.calendar td {
+    width: 24px;
+    padding: 6px 4px;
+    text-align: center;
+    border: 6px solid #fffffa;
+    background-color: #f7f3e4;
+    font-size: 20px;
+}
+
+.calendar td.event {
+    background-color: #e8edff;
+}
+
+.calendar td a {
+    display: inline-block;
+    margin: -6px -4px;
+    padding: 6px 4px;
+    vertical-align: top;
+    color: #0c75cd;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 /* }} thybzi */

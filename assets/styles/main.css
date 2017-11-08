@@ -1059,6 +1059,12 @@ img {
     margin: 0px;
 }
 
+/* thybzi {{ */
+.bd_content .arrow {
+    padding-right: 5px;
+}
+/* }} thybzi */
+
 .bd_content div ul {
     margin-left: -12px;
 }

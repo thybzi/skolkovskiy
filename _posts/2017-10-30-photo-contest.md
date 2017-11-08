@@ -1,6 +1,7 @@
 ---
 title: Фотоконкурс «Аистёнок-2017»
 announce_title: ["Фотоконкурс", "Аистёнок"]
+announce_until: 2017-11-24
 images:
     - aistenok.jpg
 ---

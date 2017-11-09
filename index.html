@@ -139,7 +139,7 @@ layout: start
                             {% endif %}
                         {% endfor %}
                         {% if post %}
-                            <td class="event"><a href="{{ post.url | prepend:site.baseurl }}">{{ day }}</a></td>
+                            <td class="event"><a href="{{ post.url | prepend:site.baseurl }}" title="{{ post.title }}">{{ day }}</a></td>
                         {% else %}
                             <td>{{ day }}</td>
                         {% endif %}

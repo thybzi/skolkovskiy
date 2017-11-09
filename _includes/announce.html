@@ -1,0 +1,30 @@
+<div class="bd{{ include.order }}" id="announce_container">
+    {% assign post = site.posts | where_exp:"item","item.announce_title" | sort:"date" | last %}
+    <div class="bd_title"><div>{{ post.announce_title | first }} <span>{{ post.announce_title | last }}</span></div></div>
+    <div class="bd_content">
+        <div>{{ post.excerpt }}</div>
+        <span class="bd_more"><a href="{{ post.url | prepend:site.baseurl }}">узнать больше</a></span>
+    </div>
+    <script type="text/x-tpl" id="substitute_announce">
+        <div class="bd_title"><div>Как <span>нам помочь?</span></div></div>
+        <div class="bd_content">
+            <div>Мы&nbsp;всегда будем рады помощи в&nbsp;организации досуга наших воспитанников, это может быть:</div>
+            <ul class="arrow">
+                <li>предоставление и&nbsp;оплата автобуса для организации поездок;</li>
+                <li>организация однодневных экскурсий;</li>
+                <li>помощь в&nbsp;приобретении санаторно-курортных путевок;</li>
+                <li>приобретение билетов в&nbsp;цирк, театр, музей, заказник.</li>
+            </ul>
+            <span class="bd_more"><a href="{{site.baseurl}}/help/">узнать больше</a></span>
+        </div>
+    </script>
+    {% assign date = post.announce_until | default:post.date %}
+    <script>
+        (function() {
+            var announce_stamp = new Date('{{ date | date:"%Y-%m-%d" }} 23:59:59');
+            if (announce_stamp < Date.now()) {
+                document.getElementById('announce_container').innerHTML = document.getElementById('substitute_announce').innerHTML;
+            }
+        })();
+    </script>
+</div>

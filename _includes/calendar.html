@@ -1,0 +1,78 @@
+<div class="bd{{ include.order }}">
+    <div class="bd_title"><div>Наши <span>мероприятия</span></div></div>
+    <div class="bd_content">
+        {% capture devnull %}
+            {% assign seconds_in_day = 60 | times:60  | times:24 %}
+            {% assign seconds_in_30_days = seconds_in_day | times:30 %}
+
+            {% assign month_first_date = site.time | date:"%Y-%m-01" %}
+            {% assign month = month_first_date | date:"%m" %}
+            {% assign month_prefix = month_first_date | date:"%Y-%m-" %}
+
+            {% assign month_last_date_candidate = month_first_date | date:"%s" | plus:seconds_in_30_days %}
+            {% assign month_last_date_candidate_month = month_last_date_candidate | date:"%m" %}
+            {% if month_last_date_candidate_month == month %}
+                {% assign month_last_date = month_last_date_candidate %}
+            {% else %}
+                {% assign extra_days = month_last_date_candidate | date:"%e" %}
+                {% assign extra_seconds = seconds_in_day | times:extra_days %}
+                {% assign month_last_date = month_last_date_candidate | minus:extra_seconds %}
+            {% endif %}
+            {% assign month_last_date = month_last_date | date:"%Y-%m-%d" %}
+            {% assign month_last_day = month_last_date | date:"%e" | plus:0 %}
+
+        {% endcapture %}{% assign devnull = nil %}
+        <div>
+            Календарь мероприятий в {% include _helpers/monthname.html month=month %}:
+        </div>
+        <div>
+        <table class="calendar" border="1">
+            <tr>
+                {% assign announces = site.announces | sort:date %}
+                {% for day in (1..month_last_day) %}
+                    {% capture devnull %}
+                        {% assign date = day | prepend:month_prefix | date:"%Y-%m-%d" %}
+                        {% assign weekday = date | date:"%w" | plus:0 %}
+                        {% if weekday == 0 %}
+                            {% assign weekday = 7 %}
+                        {% endif %}
+                    {% endcapture %}{% assign devnull = nil %}
+                    {% if forloop.first and weekday > 1 %}
+                        {% assign iterations = weekday | minus:1 %}
+                        {% for i in (1..iterations) %}
+                            <td></td>
+                        {% endfor %}
+                    {% endif %}
+
+                    {% assign post = nil %}
+                    {% for item in announces %}
+                        {% assign item_date = item.date | date:"%Y-%m-%d" %}
+                        {% if item_date == date %}
+                            {% assign post = item %}
+                            {% break %}
+                        {% endif %}
+                    {% endfor %}
+                    {% if post %}
+                        <td class="event"><a href="{{ post.url | prepend:site.baseurl }}" title="{{ post.title }}">{{ day }}</a></td>
+                    {% else %}
+                        <td>{{ day }}</td>
+                    {% endif %}
+
+                    {% if forloop.last and weekday < 7 %}
+                        {% assign iterations = 7 | minus:weekday %}
+                        {% for i in (1..iterations) %}
+                            <td></td>
+                        {% endfor %}
+                    {% endif %}
+
+                    {% unless forloop.last or weekday != 7 %}
+                        </tr>
+                        <tr>
+                    {% endunless %}
+                {% endfor %}
+            </tr>
+        </table>
+        </div>
+        <span class="bd_more"><a href="{{site.baseurl}}/announces/">узнать больше</a></span>
+    </div>
+</div>

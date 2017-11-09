@@ -28,7 +28,7 @@
         <div>
         <table class="calendar" border="1">
             <tr>
-                {% assign announces = site.announces | sort:date %}
+                {% assign announces = site.announces | sort:calendar_priority | reverse %}
                 {% for day in (1..month_last_day) %}
                     {% capture devnull %}
                         {% assign date = day | prepend:month_prefix | date:"%Y-%m-%d" %}

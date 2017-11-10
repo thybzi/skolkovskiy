@@ -5,7 +5,7 @@ permalink: /life/:year-:month-:day-:slug/
 excerpt_separator: <!--more-->
 paginate: 5
 paginate_path: "/life/page:num/"
-root_breadcrumb: "/:ЦССВ «Сколковский»"
+root_breadcrumb: "/~ЦССВ «Сколковский»"
 plugins: [jekyll-paginate]
 
 collections:
@@ -38,13 +38,13 @@ defaults:
       path: "projects"
       type: pages
     values:
-      section_breadcrumb: "/projects/:Проекты"
+      section_breadcrumb: "/projects/~Проекты"
   -
     scope:
       path: "information"
       type: pages
     values:
-      section_breadcrumb: "/information/:Сведения об образовательной организации"
+      section_breadcrumb: "/information/~Сведения об образовательной организации"
   -
     scope:
       path: ""
@@ -53,7 +53,7 @@ defaults:
       layout: "post"
       cover_image_key: 0
       files_subdir: life
-      section_breadcrumb: "/life/:Новости"
+      section_breadcrumb: "/life/~Новости"
   -
     scope:
       path: ""
@@ -62,7 +62,7 @@ defaults:
       layout: "post"
       cover_image_key: 0
       files_subdir: media
-      section_breadcrumb: "/media/:СМИ о нас"
+      section_breadcrumb: "/media/~СМИ о нас"
   -
     scope:
       path: ""
@@ -71,7 +71,7 @@ defaults:
       layout: "post"
       cover_image_key: 0
       files_subdir: announces
-      section_breadcrumb: "/announces/:Анонсы"
+      section_breadcrumb: "/announces/~Анонсы"
   -
     scope:
       path: ""
@@ -80,7 +80,7 @@ defaults:
       layout: "post"
       cover_image_key: 0
       files_subdir: montessori
-      section_breadcrumb: "/projects/:Проекты|/projects/montessori/:Монтессори-технологии в Центре"
+      section_breadcrumb: "/projects/~Проекты|/projects/montessori/~Монтессори-технологии в Центре"
   -
     scope:
       path: ""
@@ -89,7 +89,7 @@ defaults:
       layout: "post"
       cover_image_key: 0
       files_subdir: eldery-help
-      section_breadcrumb: "/projects/:Проекты|/projects/eldery-help/:Помощь пожилым людям"
+      section_breadcrumb: "/projects/~Проекты|/projects/eldery-help/~Помощь пожилым людям"
   -
     scope:
       path: ""
@@ -97,7 +97,7 @@ defaults:
     values:
       layout: "album"
       cover_image_key: 0
-      section_breadcrumb: "/gallery/:Галерея"
+      section_breadcrumb: "/gallery/~Галерея"
   -
     scope:
       path: ""

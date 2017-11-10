@@ -4,7 +4,7 @@
 {% endcapture %}
 <ul class="breadcrumbs">
 {% for item in breadcrumbs %}
-    {% assign data = item | split:":" %}
+    {% assign data = item | split:"~" %}
     <li><a href="{{ site.baseurl }}{{ data | first }}">{{ data | last }}</a></li>
 {% endfor %}
 </ul>

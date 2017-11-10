@@ -3,5 +3,5 @@
     {% if page.section_breadcrumb %}
         {% assign breadcrumbs = breadcrumbs | append:"|" | append:page.section_breadcrumb %}
     {% endif %}
-    {% assign breadcrumbs = breadcrumbs | append:"|" | append:page.url | append:":" | append:page.title %}
+    {% assign breadcrumbs = breadcrumbs | append:"|" | append:page.url | append:"~" | append:page.title %}
 {% endcapture %}{{ breadcrumbs }}

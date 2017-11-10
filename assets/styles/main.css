@@ -1365,6 +1365,10 @@ table.striped.compact td {
     background-color: #e8edff;
 }
 
+.calendar td.past {
+    opacity: 0.3;
+}
+
 .calendar td a {
     display: inline-block;
     margin: -6px -4px;

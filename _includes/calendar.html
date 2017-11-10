@@ -26,7 +26,7 @@
             Календарь мероприятий в {% include _helpers/monthname.html month=month %}:
         </div>
         <div>
-        <table class="calendar" border="1">
+        <table class="calendar" id="calendar">
             <tr>
                 {% assign announces = site.announces | sort:calendar_priority | reverse %}
                 {% for day in (1..month_last_day) %}
@@ -40,7 +40,7 @@
                     {% if forloop.first and weekday > 1 %}
                         {% assign iterations = weekday | minus:1 %}
                         {% for i in (1..iterations) %}
-                            <td></td>
+                            <td class="past"></td>
                         {% endfor %}
                     {% endif %}
 
@@ -53,9 +53,11 @@
                         {% endif %}
                     {% endfor %}
                     {% if post %}
-                        <td class="event"><a href="{{ post.url | prepend:site.baseurl }}" title="{{ post.title }}">{{ day }}</a></td>
+                        <td class="event" data-date="{{ date }}">
+                            <a href="{{ post.url | prepend:site.baseurl }}" title="{{ post.title }}">{{ day }}</a>
+                        </td>
                     {% else %}
-                        <td>{{ day }}</td>
+                        <td data-date="{{ date }}">{{ day }}</td>
                     {% endif %}
 
                     {% if forloop.last and weekday < 7 %}
@@ -72,6 +74,22 @@
                 {% endfor %}
             </tr>
         </table>
+        <script>
+            (function () {
+                var now = Date.now();
+                var date_cells = document.getElementById('calendar').querySelectorAll('[data-date]');
+                var i;
+                var cell_elem;
+                var cell_date;
+                for (i = 0; i < date_cells.length; i++) {
+                    cell_elem = date_cells[i];
+                    cell_date = new Date(cell_elem.getAttribute('data-date') + ' 23:59:59');
+                    if (cell_date < now) {
+                        cell_elem.classList.add('past');
+                    }
+                }
+            })();
+        </script>
         </div>
         <span class="bd_more"><a href="{{site.baseurl}}/announces/">узнать больше</a></span>
     </div>

@@ -1,5 +1,5 @@
 <div class="bd{{ include.order }}" id="announce_container">
-    {% assign post = site.posts | where_exp:"item","item.announce_title" | sort:"date" | last %}
+    {% assign post = site.announces | where_exp:"item","item.announce_title" | sort:"date" | last %}
     <div class="bd_title"><div>{{ post.announce_title | first }} <span>{{ post.announce_title | last }}</span></div></div>
     <div class="bd_content">
         <div>{{ post.excerpt }}</div>

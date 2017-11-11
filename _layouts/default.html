@@ -4,6 +4,11 @@
 {% include breadcrumbs.html %}
 <div class="item-page">
 
+{% if page.alternate_page %}
+{% assign alternate_page = page.alternate_page | split:"~" %}
+<a class="alternate-page" href="{{ alternate_page | first | prepend:site.base_url }}">{{ alternate_page | last }}</a>
+{% endif %}
+
 <h1>{{ page.title }}</h1>
 
 {{ content }}

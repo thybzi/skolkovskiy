@@ -1353,6 +1353,15 @@ table.striped.compact td {
 }
 
 
+.alternate-page {
+    float: right;
+    position: relative;
+    top: 3px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+
 .calendar {
     border-collapse: collapse;
     margin-left: -6px;

@@ -5,11 +5,11 @@ search_exclude: true
 
 <div class="blog">
 
-{% assign current_timestamp = site.time | date:"%s" | plus:0 %}
+{% assign current_timestamp = site.time | date:"%Y-%m-%d" | date:"%s" | plus:0 %}
 {% assign posts = site.announces | order:"date" %}
 {% for post in posts %}
 
-    {% assign post_timestamp = post.date | date:"%s" | plus:0 %}
+    {% assign post_timestamp = post.date | date:"%Y-%m-%d 23:59:59" | date:"%s" | plus:0 %}
     {% if post_timestamp >= current_timestamp %}
     {% include post-preview.html post=post %}
     {% endif %}

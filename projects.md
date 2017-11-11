@@ -10,3 +10,4 @@ search_exclude: true
 * [Монтессори-технологии в Центре]({{site.baseurl}}/projects/montessori/)
 * [Рисование в технике Эбру]({{site.baseurl}}/projects/ebru/)
 * [Развивающие игры с песком]({{site.baseurl}}/projects/sand-play/)
+* [Сенсорное развитие детей с ОВЗ]({{site.baseurl}}/projects/sensory/)

@@ -560,9 +560,15 @@ img {
 }
 
 /* thybzi {{ */
+
 .bd_content div p:first-child {
     margin-top: 0;
 }
+
+.bd_content div p:last-child {
+    margin-bottom: 0;
+}
+
 /* }} thybzi */
 
 /* ---------- footer ---------- */

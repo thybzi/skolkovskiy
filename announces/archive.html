@@ -1,17 +1,17 @@
 ---
-title: Анонсы
+title: Архив анонсов
 search_exclude: true
-alternate_page: /announces/archive/~Архив анонсов
+alternate_page: /announces/~Анонсы
 ---
 
 <div class="blog">
 
 {% assign current_timestamp = site.time | date:"%Y-%m-%d" | date:"%s" | plus:0 %}
-{% assign posts = site.announces | order:"date" %}
+{% assign posts = site.announces | order:"date" | reverse %}
 {% for post in posts %}
 
     {% assign post_timestamp = post.date | date:"%Y-%m-%d 23:59:59" | date:"%s" | plus:0 %}
-    {% if post_timestamp >= current_timestamp %}
+    {% if post_timestamp < current_timestamp %}
     {% include post-preview.html post=post %}
     {% endif %}
 
@@ -28,7 +28,7 @@ alternate_page: /announces/archive/~Архив анонсов
         for (i = 0; i < items.length; i++) {
             item = items[i];
             date = new Date(item.getAttribute('data-date') + ' 23:59:59');
-            if (date < now) {
+            if (date >= now) {
                 item.style.display = 'none';
             }
         }

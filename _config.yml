@@ -74,6 +74,12 @@ defaults:
       section_breadcrumb: "/announces/~Анонсы"
   -
     scope:
+      path: "announces"
+      type: pages
+    values:
+      section_breadcrumb: "/announces/~Анонсы"
+  -
+    scope:
       path: ""
       type: montessori
     values:

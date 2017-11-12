@@ -22,7 +22,7 @@
                 var elem;
                 while ((i < data_items_count) && (output_items_count < output_items_count_max)) {
                     item = data[i];
-                    item_time = Date.parse(item.birthday);
+                    item_time = Date.parse(item.birthday + ' 23:59:59');
                     if (item_time > now) {
                         elem = document.createElement('div');
                         is_odd = !is_odd;

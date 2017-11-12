@@ -573,6 +573,11 @@ img {
     margin-bottom: 0;
 }
 
+.bd_content p a,
+.bd_content ul a {
+    color: #0c75cd;
+}
+
 /* }} thybzi */
 
 /* ---------- footer ---------- */

@@ -1,23 +1,41 @@
+{% capture devnull %}
+    {% assign current_timestamp = site.time | date:"%s" %}
+    {% assign next_year = current_timestamp | date:"%Y" | plus:1 %}
+    {% assign announced_post = nil %}
+    {% assign announced_post_timestamp = current_timestamp | date:"-%m-%d" | prepend:next_year | date:"%s" %}
+    {% assign posts = site.announces | where_exp:"item","item.announce_title" | sort:"date" %}
+    {% for post in posts %}
+        {% assign post_timestamp = post.announce_until | default:post.date | date:"%Y-%m-%d 23:59:59" | date:"%s" %}
+        {% if post_timestamp > current_timestamp and post_timestamp < announced_post_timestamp %}
+            {% assign announced_post = post %}
+            {% assign announced_post_timestamp = post_timestamp %}
+        {% endif %}
+    {% endfor %}
+{% endcapture %}{% assign devnull = nil %}
+
+{% capture substitute_announce %}
+    <div class="bd_title"><div>Как <span>нам помочь?</span></div></div>
+    <div class="bd_content">
+        <div>Мы&nbsp;всегда будем рады помощи в&nbsp;организации досуга наших воспитанников, это может быть:</div>
+        <ul class="arrow">
+            <li>предоставление и&nbsp;оплата автобуса для организации поездок;</li>
+            <li>организация однодневных экскурсий;</li>
+            <li>помощь в&nbsp;приобретении санаторно-курортных путевок;</li>
+            <li>приобретение билетов в&nbsp;цирк, театр, музей, заказник.</li>
+        </ul>
+        <span class="bd_more"><a href="{{ site.baseurl }}/help/">узнать больше</a></span>
+    </div>
+{% endcapture %}
+
 <div class="bd{{ include.order }}" id="announce_container">
-    {% assign post = site.announces | where_exp:"item","item.announce_title" | sort:"date" | last %}
+{% if announced_post %}
+    {% assign post = announced_post %}
     <div class="bd_title"><div>{{ post.announce_title | first }} <span>{{ post.announce_title | last }}</span></div></div>
     <div class="bd_content">
         <div>{{ post.excerpt }}</div>
         <span class="bd_more"><a href="{{ post.url | prepend:site.baseurl }}">узнать больше</a></span>
     </div>
-    <script type="text/x-tpl" id="substitute_announce">
-        <div class="bd_title"><div>Как <span>нам помочь?</span></div></div>
-        <div class="bd_content">
-            <div>Мы&nbsp;всегда будем рады помощи в&nbsp;организации досуга наших воспитанников, это может быть:</div>
-            <ul class="arrow">
-                <li>предоставление и&nbsp;оплата автобуса для организации поездок;</li>
-                <li>организация однодневных экскурсий;</li>
-                <li>помощь в&nbsp;приобретении санаторно-курортных путевок;</li>
-                <li>приобретение билетов в&nbsp;цирк, театр, музей, заказник.</li>
-            </ul>
-            <span class="bd_more"><a href="{{site.baseurl}}/help/">узнать больше</a></span>
-        </div>
-    </script>
+    <script type="text/x-tpl" id="substitute_announce">{{ substitute_announce }}</script>
     {% assign date = post.announce_until | default:post.date %}
     <script>
         (function() {
@@ -27,4 +45,7 @@
             }
         })();
     </script>
+{% else %}
+    {{ substitute_announce }}
+{% endif %}
 </div>

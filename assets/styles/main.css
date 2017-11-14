@@ -1436,4 +1436,26 @@ table.striped.compact td {
     float: right;
 }
 
+
+.videos-gallery::after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+.videos-gallery .video-container {
+    float: left;
+    width: 50%;
+}
+
+.videos-gallery .video-container:nth-child(2n+1) {
+    text-align: left;
+}
+
+.videos-gallery .video-container:nth-child(2n) {
+    text-align: right;
+}
+
 /* }} thybzi */

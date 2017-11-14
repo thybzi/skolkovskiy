@@ -1458,4 +1458,44 @@ table.striped.compact td {
     text-align: right;
 }
 
+
+.footer-social {
+    position: absolute;
+    right: 16px;
+    top: 14px;
+}
+
+.footer-social-caption {
+    display: block;
+    clear: both;
+    margin-bottom: 6px;
+    text-align: right;
+    color: #fff;
+    font-size: 14px;
+}
+
+.footer-social-icons,
+.footer-social-icons-item {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-social-icons {
+    float: right;
+}
+
+.footer-social-icons-item {
+    float: left;
+    width: 44px;
+    height: 44px;
+    margin-left: 8px;
+}
+
+.footer-social-icons-item img {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+
 /* }} thybzi */

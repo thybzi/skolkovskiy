@@ -22,6 +22,10 @@
     <p class="post-source">Источник: <a href="{{ page.source }}" target="_blank">{{ page.source }}</a></p>
     {% endif %}
 
+    {% if page.video %}
+    {% include iframe-video_youtube.html id=page.video %}
+    {% endif %}
+
     {% include gallery_post.html post=page subdir=page.files_subdir %}
 
 </div>

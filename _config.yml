@@ -35,6 +35,12 @@ defaults:
       layout: "default"
   -
     scope:
+      path: "adoptive-parents"
+      type: pages
+    values:
+      section_breadcrumb: "/adoptive-parents/~Кандидатам в замещающие родители"
+  -
+    scope:
       path: "projects"
       type: pages
     values:

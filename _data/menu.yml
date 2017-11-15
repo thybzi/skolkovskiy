@@ -7,7 +7,15 @@
     - [ Наши достижения, "/awards/" ]
     - [ Вакансии, "/vacancies/" ]
     - [ Как нам помочь, "/help/" ]
-- [ Кандидатам в замещающие родители, "/adoptive-parents/" ]
+-
+  - Кандидатам в замещающие родители
+  - "/adoptive-parents/"
+  -
+    - [ Общая информация о принятии ребёнка в семью, "/adoptive-parents/" ]
+    - [ Методические рекомендации для приёмных родителей, "/adoptive-parents/recommendations/" ]
+    - [ "С чего начать оформление?", "/adoptive-parents/how-to-adopt/" ]
+    - [ Банки данных о детях-сиротах, "/adoptive-parents/databanks/" ]
+    - [ Информация о территориальных органах опеки и попечительства, "/adoptive-parents/guadianship-authorities/" ]
 -
   - Информация о мероприятиях
   - "/announces/"

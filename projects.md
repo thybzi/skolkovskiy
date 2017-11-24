@@ -11,4 +11,5 @@ search_exclude: true
 * [Рисование в технике Эбру]({{site.baseurl}}/projects/ebru/)
 * [Развивающие игры с песком]({{site.baseurl}}/projects/sand-play/)
 * [Сенсорное развитие детей с ОВЗ]({{site.baseurl}}/projects/sensory/)
+* [Конструирование в мире Лего]({{site.baseurl}}/projects/lego/)
 * [Специалистам]({{site.baseurl}}/projects/professional/)

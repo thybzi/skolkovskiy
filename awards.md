@@ -8,6 +8,9 @@ title: Наши достижения
 ## 2017
 
 {% capture gallery_items %}
+    files/awards/2017/photocontest01.jpg
+    files/awards/2017/photocontest02.jpg
+    files/awards/2017/photocontest03.jpg
     files/awards/2017/step01.jpg
     files/awards/2017/step02.jpg
     files/awards/2017/step03.jpg

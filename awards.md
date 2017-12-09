@@ -8,6 +8,7 @@ title: Наши достижения
 ## 2017
 
 {% capture gallery_items %}
+    files/life/2017-12-01-dream/0887.jpg
     files/awards/2017/photocontest01.jpg
     files/awards/2017/photocontest02.jpg
     files/awards/2017/photocontest03.jpg

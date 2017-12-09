@@ -24,6 +24,9 @@ collections:
   elderyhelp:
     output: true
     permalink: /projects/eldery-help/:path/
+  specialchild:
+    output: true
+    permalink: /projects/special-child/:path/
   children:
     output: false
 
@@ -102,6 +105,15 @@ defaults:
       cover_image_key: 0
       files_subdir: eldery-help
       section_breadcrumb: "/projects/~Проекты|/projects/eldery-help/~Помощь пожилым людям"
+  -
+    scope:
+      path: ""
+      type: specialchild
+    values:
+      layout: "post"
+      cover_image_key: 0
+      files_subdir: special-child
+      section_breadcrumb: "/projects/~Проекты|/projects/special-child/~Особый ребёнок"
   -
     scope:
       path: ""

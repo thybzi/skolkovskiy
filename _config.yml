@@ -113,7 +113,7 @@ defaults:
       layout: "post"
       cover_image_key: 0
       files_subdir: special-child
-      section_breadcrumb: "/projects/~Проекты|/projects/special-child/~Особый ребёнок"
+      section_breadcrumb: "/projects/~Проекты|/projects/special-child/~Особый ребёнок. Всё обо всём"
   -
     scope:
       path: ""

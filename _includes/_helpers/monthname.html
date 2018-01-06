@@ -1,5 +1,5 @@
 {% capture devnull %}
-    {% assign month_number = include.month %}
+    {% assign month_number = include.month | plus:0 | append:"" %}
     {% case month_number %}
         {% when "1" %}{% assign month_name = "январе" %}
         {% when "2" %}{% assign month_name = "феврале" %}

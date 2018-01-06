@@ -6,10 +6,10 @@
     </div>
     <script>
         (function () {
+            var now = Date.now();
             var xhr = new XMLHttpRequest();
-            xhr.open('GET', '{{ site.baseurl }}/files/birthlist.json');
+            xhr.open('GET', '{{ site.baseurl }}/files/birthlist.json?' + now);
             xhr.onload = function() {
-                var now = Date.now();
                 var container = document.getElementById("birthlist");
                 var data = JSON.parse(xhr.responseText);
                 var data_items_count = data.length;

@@ -7,6 +7,7 @@ title: Образование
 * {% include doc-link.html text="Учебный план на 2017-2018 гг." uri="files/education/educational-plan_2017-2018.docx" %}
 * {% include doc-link.html text="Дополнительная адаптированная общеобразовательная и общеразвивающая программа для детей с ОВЗ" uri="files/education/additional-program.docx" %} |
   {% include doc-link.html text="паспорт адаптированной программы" uri="files/education/additional-program-passport.docx" %}
+* {% include doc-link.html text="Календарно-учебный график" uri="files/education/calendar-educational-schedule.docx" %}
 * Численность обучающихся: 130
 * Язык обучения: русский
 

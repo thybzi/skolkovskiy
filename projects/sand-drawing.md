@@ -61,3 +61,18 @@ title: Чудеса из песка (песочное рисование)
 Картины из песка — источник творческой энергии и средство для релаксации.
 
 {% include iframe-video_youtube.html id="EEnVOTlD_ZQ" %}
+
+### Портрет мамы
+
+{% include gallery-item.html image="files/projects/sand-drawing-04.jpg" is_right="true" %}
+
+Я портрет рисую мамы  
+На столе песком  
+И пускай портрет без рамы,  
+Но для мамы дорогой.  
+Я старался. Ведь на свете  
+Лучше мамы нет другой!  
+Я поправлю твои волосы,  
+И скажу тебе, приди за мной!
+
+{% include iframe-video_youtube.html id="MvKbj52vN6k" %}

@@ -3,6 +3,8 @@ title: Видео
 ---
 
 <div class="videos-gallery">
+    {% include iframe-video_youtube.html width=440 height=247 id="qnOwUWao04c" %}
+
 {% assign posts = site.posts | where_exp:"post","post.video" | sort:"date" | reverse %}
 {% for post in posts %}
     {% include iframe-video_youtube.html width=440 height=247 id=post.video %}

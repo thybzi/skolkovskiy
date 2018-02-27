@@ -60,6 +60,7 @@ title: Документы
 ### Другие документы
 * {% include doc-link.html text="Правила внутреннего распорядка" uri="files/docs/internal-regulation.docx" %}
 * {% include doc-link.html text="Режим дня" uri="files/docs/daily-schedule.pdf" %}
+* {% include doc-link.html text="Сводная ведомость проведения специальной оценки условий труда" uri="files/docs/working-conditions-inspection.pdf" %}
 
 ### Положения и приказы
 

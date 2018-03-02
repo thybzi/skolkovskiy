@@ -27,6 +27,9 @@ collections:
   specialchild:
     output: true
     permalink: /projects/special-child/:path/
+  sanddrawing:
+    output: true
+    permalink: /projects/sand-drawing/:path/
   children:
     output: false
 
@@ -114,6 +117,15 @@ defaults:
       cover_image_key: 0
       files_subdir: special-child
       section_breadcrumb: "/projects/~Проекты|/projects/special-child/~Особый ребёнок. Всё обо всём"
+  -
+    scope:
+      path: ""
+      type: sanddrawing
+    values:
+      layout: "post"
+      cover_image_key: 0
+      files_subdir: sand-drawing
+      section_breadcrumb: "/projects/~Проекты|/projects/special-child/~Чудеса из песка (песочное рисование)"
   -
     scope:
       path: ""

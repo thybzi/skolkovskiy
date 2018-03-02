@@ -36,7 +36,7 @@
     <h2>{{ title }}</h2>
     {% endif %}
 
-    {% if post.date %}
+    {% if post.date and post.hide_date != true %}
     <dl class="article-info">
         <dd class="create">{{ post.date | date:"%d.%m.%Y" }}</dd>
     </dl>

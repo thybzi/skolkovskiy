@@ -30,6 +30,9 @@ collections:
   sanddrawing:
     output: true
     permalink: /projects/sand-drawing/:path/
+  ebru:
+    output: true
+    permalink: /projects/ebru/:path/
   children:
     output: false
 
@@ -126,6 +129,15 @@ defaults:
       cover_image_key: 0
       files_subdir: sand-drawing
       section_breadcrumb: "/projects/~Проекты|/projects/sand-drawing/~Чудеса из песка (песочное рисование)"
+  -
+    scope:
+      path: ""
+      type: ebru
+    values:
+      layout: "post"
+      cover_image_key: 0
+      files_subdir: ebru
+      section_breadcrumb: "/projects/~Проекты|/projects/ebru/~Рисование в технике Эбру «Чудесные превращения»"
   -
     scope:
       path: ""

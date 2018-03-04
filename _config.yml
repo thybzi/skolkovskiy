@@ -125,7 +125,7 @@ defaults:
       layout: "post"
       cover_image_key: 0
       files_subdir: sand-drawing
-      section_breadcrumb: "/projects/~Проекты|/projects/special-child/~Чудеса из песка (песочное рисование)"
+      section_breadcrumb: "/projects/~Проекты|/projects/sand-drawing/~Чудеса из песка (песочное рисование)"
   -
     scope:
       path: ""

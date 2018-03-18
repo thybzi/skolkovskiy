@@ -6,9 +6,7 @@ title: Документы
 
 ### Уставные документы
 * {% include doc-link.html text="Устав" uri="files/docs/charter.docx" %}
-* {% include doc-link.html text="Коллективный договор" uri="files/docs/collective-agreement_1.doc" %} |
-  {% include doc-link.html text="титульный лист" uri="files/docs/collective-agreement_2.jpg" %} |
-  {% include doc-link.html text="Дополнительное соглашение № 1" uri="files/docs/collective-agreement_3.jpg" %}
+* {% include doc-link.html text="Коллективный договор" uri="files/docs/collective-agreement.doc" %}
 * {% include doc-link.html text="Приказ об утверждении Устава от 09.11.2011" uri="files/docs/order_1_1.jpg" %}
 * {% include doc-link.html text="Приказ о реорганизации от 24.11.2014" uri="files/docs/order_2_1.jpg" %} |
   {% include doc-link.html text="лист 2" uri="files/docs/order_2_2.jpg" %}

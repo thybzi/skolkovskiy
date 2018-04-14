@@ -1,5 +1,5 @@
 ---
-title: Готовимся готовить!
+title: Учимся готовить
 images:
     - 0207.jpg
 video: VKNPPA22W30

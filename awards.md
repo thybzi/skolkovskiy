@@ -5,6 +5,14 @@ title: Наши достижения
 Здесь вы можете посмотреть награды, грамоты и дипломы, полученные нашими ребятами и педагогами, — и порадоваться вместе с нами!
 
 
+## 2018
+
+{% capture gallery_items %}
+    files/awards/2018/flowers.jpg
+{% endcapture %}
+{% include gallery_custom.html items=gallery_items %}
+
+
 ## 2017
 
 {% capture gallery_items %}

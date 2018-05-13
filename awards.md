@@ -8,6 +8,10 @@ title: Наши достижения
 ## 2018
 
 {% capture gallery_items %}
+    files/awards/2018/042501.jpg
+    files/awards/2018/042502.jpg
+    files/awards/2018/042503.jpg
+    files/awards/2018/042504.jpg
     files/awards/2018/flowers.jpg
 {% endcapture %}
 {% include gallery_custom.html items=gallery_items %}

@@ -54,6 +54,7 @@ title: Документы
 * Отчёт директора:
   {% include doc-link.html text="2016" uri="files/docs/director-report_2016.docx" %} |
   2017
+* {% include doc-link.html text="Информация об обучении педагогических работников организаций для детей-сирот и детей, оставшихся без попечения родителей, за период 2017–2018 гг." uri="files\docs\staff-education_2017-2018.doc" %}
 
 ### Другие документы
 * {% include doc-link.html text="Правила внутреннего распорядка" uri="files/docs/internal-regulation.docx" %}

@@ -44,7 +44,6 @@ title: Документы
   {% include doc-link.html text="24.08.2016" uri="files/docs/registry_2016-08-24.pdf" %}
 * {% include doc-link.html text="Свидетельство о постановке на налоговый учет" uri="files/docs/tax-accounting-certificate.pdf" %}
 * {% include doc-link.html text="Уведомление о снятии с учета в налоговом органе (Дом ребенка № 21; 07.07.2015)" uri="files/docs/tax-authority-registration-cancellation_2015-07-07.pdf" %}
-* {% include doc-link.html text="Заключение о соответствии требованиям пожарной безопасности (17.08.2016)" uri="files/docs/fire-safety-conclusion_2016-08-17.pdf" %}
 * {% include doc-link.html text="Санитарно-эпидемиологическое заключение (08.07.2016)" uri="files/docs/sanitary-conclusion_2016-07-08.pdf" %}
 
 ### Отчеты

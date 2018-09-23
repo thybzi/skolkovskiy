@@ -1,6 +1,6 @@
 ---
 title: В танковом музее в Кубинке
-order: 330
+order: 1230
 images:
     - phoca_thumb_l_1.jpg
     - phoca_thumb_l_2.jpg

@@ -1,6 +1,6 @@
 ---
 title: Наши любимые Воробьёвы горы
-order: 30
+order: 930
 images:
     - phoca_thumb_l_1.jpg
     - phoca_thumb_l_2.jpg

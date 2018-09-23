@@ -1,6 +1,6 @@
 ---
 title: «Волшебная пряжа»
-order: 70
+order: 970
 images:
     - phoca_thumb_l_1.jpg
     - phoca_thumb_l_2.jpg

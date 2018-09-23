@@ -1,6 +1,6 @@
 ---
 title: В сердце города
-order: 100
+order: 1000
 images:
     - phoca_thumb_l_1.jpg
     - phoca_thumb_l_2.jpg

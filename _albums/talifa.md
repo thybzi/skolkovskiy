@@ -1,6 +1,6 @@
 ---
 title: Спектакль «Кошечка Талифа»
-order: 50
+order: 950
 images:
     - phoca_thumb_l_1.jpg
     - phoca_thumb_l_2.jpg

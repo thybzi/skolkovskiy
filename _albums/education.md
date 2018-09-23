@@ -1,6 +1,6 @@
 ---
 title: Мы учимся, Я и мой компьютер
-order: 10
+order: 910
 images:
     - phoca_thumb_l_1.jpg
     - phoca_thumb_l_2.jpg

@@ -1,6 +1,6 @@
 ---
 title: Московский планетарий
-order: 8
+order: 880
 images:
   - 3.jpg
   - 192.jpg

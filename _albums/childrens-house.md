@@ -1,6 +1,6 @@
 ---
 title: Наш детский дом-интернат
-order: 40
+order: 940
 images:
     - phoca_thumb_l_o1.jpg
     - phoca_thumb_l_o2.jpg

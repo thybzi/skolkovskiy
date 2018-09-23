@@ -1,6 +1,6 @@
 ---
 title: В Государственном музее изобразительных искусств
-order: 90
+order: 990
 images:
     - phoca_thumb_l_1.jpg
     - phoca_thumb_l_2.jpg

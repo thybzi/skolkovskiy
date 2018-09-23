@@ -1,6 +1,6 @@
 ---
 title: На прогулке
-order: 20
+order: 920
 images:
     - phoca_thumb_l_1.jpg
     - phoca_thumb_l_2.jpg

@@ -1,6 +1,6 @@
 ---
 title: День старшего поколения
-order: 80
+order: 980
 images:
     - phoca_thumb_l_1.jpg
     - phoca_thumb_l_2.jpg

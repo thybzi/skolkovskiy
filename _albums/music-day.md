@@ -1,6 +1,6 @@
 ---
 title: «Наш общий разный мир»
-order: 60
+order: 960
 images:
     - phoca_thumb_l_1.jpg
     - phoca_thumb_l_2.jpg

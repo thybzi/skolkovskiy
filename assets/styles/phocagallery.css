@@ -139,6 +139,12 @@
 	width: 50%; /* thybzi */
 }
 
+/* thybzi */
+.pg-cats-box-float table tr td div.pg-imgbg a img {
+	width: 100px;
+	height: 100px;
+}
+
 
 /*detail*/
 .phocagallery-box-file-d	{

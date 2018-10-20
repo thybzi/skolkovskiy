@@ -1,6 +1,12 @@
         <tr>
             <td class="item-number"></td>
-            <td>{{ include.title }}</td>
+            <td>
+                {% if include.file %}
+                    <a href="{{ site.baseurl }}/{{ include.file }}" target="_blank">{{ include.title }}</a>
+                {% else %}
+                    {{ include.title }}
+                {% endif %}
+            </td>
             <td>
                 {% if include.type %}<strong>Направление</strong>: {{ include.type }}.<br>{% endif %}
                 {% if include.aim %}<strong>Цель</strong>: {{ include.aim }}<br>{% endif %}

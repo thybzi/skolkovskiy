@@ -8,7 +8,7 @@ title: Образование
 * {% include doc-link.html text="Дополнительная адаптированная общеобразовательная и общеразвивающая программа для детей с ОВЗ" uri="files/education/additional-program.docx" %} |
   {% include doc-link.html text="паспорт адаптированной программы" uri="files/education/additional-program-passport.docx" %}
 * {% include doc-link.html text="Календарно-учебный график" uri="files/education/calendar-educational-schedule.docx" %}
-* Численность обучающихся: 130
+* Численность обучающихся: 117
 * Язык обучения: русский
 
 В ГКУ ЦССВ «Сколковский» разработаны программы на основании:

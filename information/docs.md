@@ -83,3 +83,4 @@ title: Документы
 15. {% include doc-link.html text="Положение о зачислении, переводе и отчислении воспитанников" uri="files/docs/regulation_enrollment.pdf" %} ГКУ ЦССВ «Сколковский» от 10.06.2017.
 16. {% include doc-link.html text="Положение Медико-психолого-педагогического консилиума" uri="files/docs/regulation_mppc.pdf" %} ГКУ ЦССВ «Сколковский».
 17. {% include doc-link.html text="Положение о Дополнительной адаптированной общеобразовательной и общеразвивающей программе" uri="files/docs/regulation_additional-program.pdf" %} социально-педагогической направленности для детей-сирот и детей, оставшихся без попечения родителей, с ограниченными возможностями здоровья ГКУ ЦССВ «Сколковский».
+18. {% include doc-link.html text="Положение о дошкольном образовании" uri="files/docs/regulation_preschool.docx" %} в ГКУ ЦССВ «Сколковский».

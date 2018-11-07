@@ -23,7 +23,8 @@ title: Документы
   {% include doc-link.html text="Приложение № 1.1" uri="files/docs/license_education_3.jpg" %}
 * {% include doc-link.html text="Лицензия на осуществление медицинской деятельности" uri="files/docs/license_medical_1.jpg" %} |
   {% include doc-link.html text="оборотная сторона" uri="files/docs/license_medical_2.jpg" %} |
-  {% include doc-link.html text="Приложение № 1" uri="files/docs/license_medical_3.jpg" %}
+  {% include doc-link.html text="Приложение № 1 (стр. 1)" uri="files/docs/license_medical_3.jpg" %}
+  {% include doc-link.html text="Приложение № 1 (стр. 2)" uri="files/docs/license_medical_4.jpg" %}
 * {% include doc-link.html text="Лицензия на осуществление фармацевтической деятельности" uri="files/docs/license_pharmacy_1.jpg" %} |
   {% include doc-link.html text="оборотная сторона" uri="files/docs/license_pharmacy_2.jpg" %} |
   {% include doc-link.html text="Приложение № 1" uri="files/docs/license_pharmacy_3.jpg" %}

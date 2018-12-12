@@ -50,8 +50,8 @@ title: Документы
 ### Отчеты
 * {% include doc-link.html text="Отчет о результатах самообследования (2017–2018)" uri="files/docs/self-examination-report_2017-2018.docx" %}
 * Отчет Попечительского совета:
-  {% include doc-link.html text="2018" uri="files/docs/trustee-board-report_2018.pdf" %},
-  {% include doc-link.html text="2017" uri="files/docs/trustee-board-report_2017.pdf" %},
+  {% include doc-link.html text="2018" uri="files/docs/trustee-board-report_2018.pdf" %} |
+  {% include doc-link.html text="2017" uri="files/docs/trustee-board-report_2017.pdf" %} |
   2016 ({% include doc-link.html text="лист 1" uri="files/docs/trustee-board-report_2016_1.jpg" %},
   {% include doc-link.html text="лист 2" uri="files/docs/trustee-board-report_2016_2.jpg" %})
 * {% include doc-link.html text="Информация о результатах проведенных проверок (2016–2018)" uri="files/docs/inspections_2016-2018.docx" %}

@@ -57,6 +57,7 @@ title: Документы
 * {% include doc-link.html text="Информация о результатах проведенных проверок (2016–2018)" uri="files/docs/inspections_2016-2018.docx" %}
 * Отчёт директора:
   {% include doc-link.html text="2018" uri="files/docs/director-report_2018.docx" %}
+* {% include doc-link.html text="Отчёт о социализации воспитанников в ГКУ ЦССВ «Сколковский»" uri="files/docs/socialization-report.docx" %}
 * {% include doc-link.html text="Информация об обучении педагогических работников организации за период 2017–2018 гг." uri="files/docs/staff-education_2017-2018.doc" %}
 
 ### Другие документы

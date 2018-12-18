@@ -8,6 +8,7 @@ search_exclude: true
 * [Поздравь ребёнка]({{site.baseurl}}/projects/birthdays/)
 * [Помощь пожилым людям]({{site.baseurl}}/projects/eldery-help/)
 * [Монтессори-технологии в Центре]({{site.baseurl}}/projects/montessori/)
+* [Наша телестудия]({{site.baseurl}}/projects/tvstudio/)
 * [Особый ребёнок. Всё обо всём]({{site.baseurl}}/projects/special-child/)
 * [Рисование в технике Эбру]({{site.baseurl}}/projects/ebru/)
 * [Чудеса из песка (песочное рисование)]({{site.baseurl}}/projects/sand-drawing/)

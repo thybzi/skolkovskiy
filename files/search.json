@@ -46,6 +46,12 @@ layout: null
     {% endunless %}
 {% endfor %}
 
+{% assign pages = site.tvstudio | sort:"date" | reverse %}{% for item in pages %}
+    {% unless item.search_exclude %}
+        {% include _search/json-item.html item=item %}
+    {% endunless %}
+{% endfor %}
+
 {% assign pages = site.sanddrawing | sort:"date" | reverse %}{% for item in pages %}
     {% unless item.search_exclude %}
         {% include _search/json-item.html item=item %}

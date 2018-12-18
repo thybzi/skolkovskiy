@@ -90,3 +90,10 @@ title: Документы
 16. {% include doc-link.html text="Положение Медико-психолого-педагогического консилиума" uri="files/docs/regulation_mppc.pdf" %} ГКУ ЦССВ «Сколковский».
 17. {% include doc-link.html text="Положение о Дополнительной адаптированной общеобразовательной и общеразвивающей программе" uri="files/docs/regulation_additional-program.pdf" %} социально-педагогической направленности для детей-сирот и детей, оставшихся без попечения родителей, с ограниченными возможностями здоровья ГКУ ЦССВ «Сколковский».
 18. {% include doc-link.html text="Положение о дошкольном образовании" uri="files/docs/regulation_preschool.pdf" %} в ГКУ ЦССВ «Сколковский».
+19. {% include doc-link.html text="Положение о структурном подразделении «Бухгалтерия»" uri="files/docs/regulation_dept_bookkeeping.pdf" %}.
+20. {% include doc-link.html text="Положение о структурном подразделении «Руководство»" uri="files/docs/regulation_dept_administration.pdf" %}.
+21. {% include doc-link.html text="Положение о структурном подразделении «Служба медицинской помощи детям»" uri="files/docs/regulation_dept_medical.pdf" %}.
+22. {% include doc-link.html text="Положение о структурном подразделении «Административно-хозяйственный отдел»" uri="files/docs/regulation_dept_economic.pdf" %}.
+23. {% include doc-link.html text="Положение о структурном подразделении «Пищеблок»" uri="files/docs/regulation_dept_nutrition.pdf" %}.
+24. {% include doc-link.html text="Положение о структурном подразделении «Отдел кадров»" uri="files/docs/regulation_dept_personnel.pdf" %}.
+25. {% include doc-link.html text="Положение о структурном подразделении «Служба психолого-педагогического и социального сопровождения детей»" uri="files/docs/regulation_dept_children-support.pdf" %}.

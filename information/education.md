@@ -115,7 +115,7 @@ title: Образование
 
 {% include programs-table__item.html
     title="Адаптированная дополнительная общеразвивающая программа коррекционной направленности «Песочная сказка»"
-    file="files/education/program_sand-fairytale.doc"
+    file="files/education/program_sand-fairytale.docx"
     type="коррекционное"
     aim="Развитие познавательной деятельности ребёнка, интереса и активности в деятельности, навыков взаимодействия с взрослыми."
     age="10—16 лет"

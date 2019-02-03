@@ -68,5 +68,10 @@ _(13.02.2018)_.
     files/help/0ea1aadf.jpg||
     files/help/cd7d055d.jpg||
     files/help/ff74bcd8.jpg||
+    files/help/0110aaaa.jpg||
+    files/help/3e85f992.jpg||
+    files/help/41186996.jpg||
+    files/help/46ee2413.jpg||
+    files/help/9d1dbb4a.jpg||
 {% endcapture %}
 {% include gallery_custom.html items=gallery_items %}

@@ -65,5 +65,8 @@ _(13.02.2018)_.
     files/help/005.jpg||
     files/help/006.jpg||
     files/help/007.jpg||Сторонники Партии «Единая Россия»
+    files/help/0ea1aadf.jpg||
+    files/help/cd7d055d.jpg||
+    files/help/ff74bcd8.jpg||
 {% endcapture %}
 {% include gallery_custom.html items=gallery_items %}

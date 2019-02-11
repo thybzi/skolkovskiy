@@ -10,7 +10,6 @@ images:
   - 9025.jpg
   - 9028.jpg
   - 9050.jpg
-  - 9050.jpg
   - 9062.jpg
   - 9077.jpg
   - 9097.jpg

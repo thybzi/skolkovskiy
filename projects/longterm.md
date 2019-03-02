@@ -1,5 +1,5 @@
 ---
-Долговременный уход
+title: Долговременный уход
 ---
 
 {% include gallery-item.html image="files/projects/longterm.jpg" caption="Долговременный уход" is_right="true" %}

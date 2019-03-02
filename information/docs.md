@@ -66,8 +66,8 @@ title: Документы
 * {% include doc-link.html text="Режим дня" uri="files/docs/daily-schedule.pdf" %}
 * {% include doc-link.html text="Сводная ведомость проведения специальной оценки условий труда" uri="files/docs/working-conditions-inspection.pdf" %}
 * Сводная ведомость проведения специальной оценки условий труда:
-  {% include doc-link.html text="2017" uri="files/docs/working-conditions-inspection_2017.pdf" %} |
-  {% include doc-link.html text="2018" uri="files/docs/working-conditions-inspection_2018.pdf" %}
+  {% include doc-link.html text="2018" uri="files/docs/working-conditions-inspection_2018.pdf" %} |
+  {% include doc-link.html text="2017" uri="files/docs/working-conditions-inspection_2017.pdf" %}
 
 ### Положения и приказы
 

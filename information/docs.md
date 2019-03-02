@@ -67,6 +67,7 @@ title: Документы
 * Сводная ведомость проведения специальной оценки условий труда:
   {% include doc-link.html text="2018" uri="files/docs/working-conditions-inspection_2018.pdf" %} |
   {% include doc-link.html text="2017" uri="files/docs/working-conditions-inspection_2017.pdf" %}
+* {% include doc-link.html text="План мероприятий по улучшению условий и охраны труда работников" uri="files/docs/working-conditions-improvement-plan.pdf" %}
 
 ### Положения и приказы
 

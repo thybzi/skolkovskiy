@@ -65,7 +65,7 @@ title: Документы
 * {% include doc-link.html text="Правила внутреннего распорядка" uri="files/docs/internal-regulation.docx" %}
 * {% include doc-link.html text="Режим дня" uri="files/docs/daily-schedule.pdf" %}
 * Сводная ведомость проведения специальной оценки условий труда:
-  {% include doc-link.html text="2018" uri="files/docs/working-conditions-inspection_2018.pdf" %} |
+  {% include doc-link.html text="2019" uri="files/docs/working-conditions-inspection_2018.pdf" %} |
   {% include doc-link.html text="2017" uri="files/docs/working-conditions-inspection_2017.pdf" %}
 * {% include doc-link.html text="План мероприятий по улучшению условий и охраны труда работников" uri="files/docs/working-conditions-improvement-plan.pdf" %}
 

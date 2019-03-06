@@ -160,7 +160,7 @@ defaults:
     values:
       layout: "post"
       cover_image_key: 0
-      files_subdir: ebru
+      files_subdir: longterm
       section_breadcrumb: "/projects/~Проекты|/projects/longterm/~Долговременный уход"
   -
     scope:

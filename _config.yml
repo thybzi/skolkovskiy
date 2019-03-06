@@ -36,6 +36,9 @@ collections:
   ebru:
     output: true
     permalink: /projects/ebru/:path/
+  longterm:
+    output: true
+    permalink: /projects/longterm/:path/
   children:
     output: false
 
@@ -150,6 +153,15 @@ defaults:
       cover_image_key: 0
       files_subdir: ebru
       section_breadcrumb: "/projects/~Проекты|/projects/ebru/~Рисование в технике Эбру"
+  -
+    scope:
+      path: ""
+      type: longterm
+    values:
+      layout: "post"
+      cover_image_key: 0
+      files_subdir: ebru
+      section_breadcrumb: "/projects/~Проекты|/projects/longterm/~Долговременный уход"
   -
     scope:
       path: ""

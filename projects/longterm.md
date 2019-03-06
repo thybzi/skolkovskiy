@@ -8,7 +8,7 @@ title: Долговременный уход
 
 Целевые группы проекта – это граждане с дефицитом самообслуживания, граждане, задействованные в уходе (семья и окружение), и специалисты, которые включены в систему оказания услуг по долговременному уходу.
 
-<div class="blog">
+<div class="blog clear">
 {% assign longterm_posts = site.longterm | order:"date" %}
 {% for post in longterm_posts %}
 {% include post-preview.html post=post subdir="longterm" %}

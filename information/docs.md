@@ -55,7 +55,7 @@ title: Документы
   {% include doc-link.html text="2017" uri="files/docs/trustee-board-report_2017.pdf" %} |
   2016 ({% include doc-link.html text="лист 1" uri="files/docs/trustee-board-report_2016_1.jpg" %},
   {% include doc-link.html text="лист 2" uri="files/docs/trustee-board-report_2016_2.jpg" %})
-* {% include doc-link.html text="Информация о результатах проведенных проверок (2016–2018)" uri="files/docs/inspections_2016-2018.docx" %}
+* {% include doc-link.html text="Информация о результатах проведенных проверок (2016–2019)" uri="files/docs/inspections_2016-2019.doc" %}
 * Отчёт директора:
   {% include doc-link.html text="2018" uri="files/docs/director-report_2018.docx" %}
 * {% include doc-link.html text="Отчёт о социализации воспитанников в ГКУ ЦССВ «Сколковский»" uri="files/docs/socialization-report.docx" %}

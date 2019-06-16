@@ -8,6 +8,7 @@ title: Наши достижения
 ## 2019
 
 {% capture gallery_items %}
+    files/awards/2019/a2258d22.jpg
     files/awards/2019/a605bbe2.jpg
 {% endcapture %}
 {% include gallery_custom.html items=gallery_items %}

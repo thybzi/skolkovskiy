@@ -62,6 +62,7 @@ title: Документы
 * {% include doc-link.html text="Отчёт о социализации воспитанников в ГКУ ЦССВ «Сколковский»" uri="files/docs/socialization-report.docx" %}
 * {% include doc-link.html text="Информация об обучении педагогических работников организации за 2019 г." uri="files/docs/staff-education_2019.doc" %}
 
+
 ### Другие документы
 * {% include doc-link.html text="Правила внутреннего распорядка" uri="files/docs/internal-regulation.docx" %}
 * {% include doc-link.html text="Режим дня" uri="files/docs/daily-schedule.pdf" %}

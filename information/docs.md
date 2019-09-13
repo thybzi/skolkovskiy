@@ -70,6 +70,7 @@ title: Документы
   {% include doc-link.html text="2019" uri="files/docs/working-conditions-inspection_2018.pdf" %} |
   {% include doc-link.html text="2017" uri="files/docs/working-conditions-inspection_2017.pdf" %}
 * {% include doc-link.html text="План мероприятий по улучшению условий и охраны труда работников" uri="files/docs/working-conditions-improvement-plan.pdf" %}
+* {% include doc-link.html text="План противодействия коррупции в ГКУ ЦССВ "Сколковский" на 2018-2020 г." uri="files/docs/DOC56.pdf" %}
 
 ### Положения и приказы
 

@@ -16,6 +16,8 @@ title: Наши достижения
     files/awards/2019/54117eeb.jpg
     files/awards/2019/e5c5fd85.jpg
     files/awards/2019/dy428.jpg
+    files/awards/2019/14CE1134.jpg
+    files/awards/2019/028A6148.jpg
 {% endcapture %}
 {% include gallery_custom.html items=gallery_items %}
 

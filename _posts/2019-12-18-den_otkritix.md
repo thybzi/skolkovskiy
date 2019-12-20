@@ -1,7 +1,7 @@
 ---
 title: День открытых дверей в ГКУ ЦССВ «Сколковский»
 images:
-    - den_otkritix.jpg    
+    - den2019.jpg    
 ---
 
 

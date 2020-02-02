@@ -5,6 +5,14 @@ title: Наши достижения
 Здесь вы можете посмотреть награды, грамоты и дипломы, полученные нашими ребятами и педагогами, — и порадоваться вместе с нами!
 
 
+## 2020
+
+{% capture gallery_items %}
+       files/awards/2020/02adi123wqe.jpg
+{% endcapture %}
+{% include gallery_custom.html items=gallery_items %}
+
+
 ## 2019
 
 {% capture gallery_items %}

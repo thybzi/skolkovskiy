@@ -8,7 +8,7 @@ title: Наши достижения
 ## 2020
 
 {% capture gallery_items %}
-       files/awards/2020/02adi123wqe.jpg
+       files/awards/2020/adi123wqe.jpg
 {% endcapture %}
 {% include gallery_custom.html items=gallery_items %}
 

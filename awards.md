@@ -10,6 +10,9 @@ title: Наши достижения
 {% capture gallery_items %}
        files/awards/2020/adi123wqe.jpg
        files/awards/2020/4283977E.jpg
+       files/awards/2020/c1h1e2k3ov.jpg
+       files/awards/2020/fre8r8ef.jpg
+       files/awards/2020/frw8cw9.jpg
 {% endcapture %}
 {% include gallery_custom.html items=gallery_items %}
 

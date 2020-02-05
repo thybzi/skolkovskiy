@@ -54,6 +54,7 @@ title: Документы
 {% include doc-link.html text="2019" uri="files/docs/self-examination-report_2019.docx" %}
 * {% include doc-link.html text="О результатах самообследования 2018-2019год" uri="files/docs/samoobsledovanie2018-2019.docx" %}
 * Отчет Попечительского совета:
+  {% include doc-link.html text="2019" uri="files/docs/trustee-board-report_2019.pdf" %} |
   {% include doc-link.html text="2018" uri="files/docs/trustee-board-report_2018.pdf" %} |
   {% include doc-link.html text="2017" uri="files/docs/trustee-board-report_2017.pdf" %} |
   2016 ({% include doc-link.html text="лист 1" uri="files/docs/trustee-board-report_2016_1.jpg" %},

@@ -51,7 +51,6 @@ title: Документы
 ### Отчеты
 * Отчет о результатах самообследования: {% include doc-link.html text="2018" uri="files/docs/self-examination-report_2017-2018.docx" %}
 {% include doc-link.html text="2019" uri="files/docs/self-examination-report_2019.docx" %}
-* {% include doc-link.html text="О результатах самообследования 2018-2019год" uri="files/docs/samoobsledovanie2018-2019.docx" %}
 * Отчет Попечительского совета:
   {% include doc-link.html text="2019" uri="files/docs/trustee-board-report_2019.pdf" %} |
   {% include doc-link.html text="2018" uri="files/docs/trustee-board-report_2018.pdf" %} |
@@ -64,7 +63,7 @@ title: Документы
   {% include doc-link.html text="2019" uri="files/docs/director-report_2019.docx" %}
 * {% include doc-link.html text="Отчёт о социализации воспитанников в ГКУ ЦССВ «Сколковский»" uri="files/docs/socialization-report.docx" %}
 * {% include doc-link.html text="Информация об обучении педагогических работников организации за 2019 г." uri="files/docs/staff-education_2019.doc" %}
-
+* {% include doc-link.html text="Отчет об исполнении мероприятий, предусмотренных Планом" uri="files/docs/otchet_koruptsia.tif" %}. противодействия корупции в ГКУ ЦССВ «Сколковский» на 2018-2020 годы за певое полугодие 2019 года.
 
 ### Другие документы
 * {% include doc-link.html text="Правила внутреннего распорядка" uri="files/docs/internal-regulation.docx" %}
@@ -111,4 +110,3 @@ title: Документы
 27. {% include doc-link.html text="Положение о порядке пользования бибилиотеками и информационными ресурсами," uri="files/docs/DOC074.PDF" %}.  доступа к информационно-телекоммуникационным сетям и базам данных, учебным и методическим материалам, музейным фондам, материально-техническим средствам, обеспечения образовательной деятельности.
 28. {% include doc-link.html text="Положение о нормах профессиональной этики педагогических работников ГКУ ЦССВ «Сколковский»" uri="files/docs/DOC071.PDF" %}.
 29. {% include doc-link.html text="Положение о правилах приема обучающихся на обучение по дополнительным общеобразовательным" uri="files/docs/DOC072.PDF" %}. программам ГКУ ЦССВ «Сколковский»
-30. {% include doc-link.html text="Отчет об исполнении мероприятий, предусмотренных Планом" uri="files/docs/otchet_koruptsia.tif" %}. противодействия корупции в ГКУ ЦССВ «Сколковский» на 2018-2020 годы за певое полугодие 2019 года.

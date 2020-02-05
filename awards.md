@@ -15,6 +15,8 @@ title: Наши достижения
        files/awards/2020/frw8cw9.jpg
        files/awards/2020/FACF4946.jpg
        files/awards/2020/C24B731D.jpg
+       files/awards/2020/0848684E.jpg
+       files/awards/2020/nro231n.jpg
 {% endcapture %}
 {% include gallery_custom.html items=gallery_items %}
 

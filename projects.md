@@ -15,5 +15,6 @@ search_exclude: true
 * [Развивающие игры с песком]({{site.baseurl}}/projects/sand-play/)
 * [Сенсорное развитие детей с ОВЗ]({{site.baseurl}}/projects/sensory/)
 * [Конструирование в мире Лего]({{site.baseurl}}/projects/lego/)
+* [Портаж]({{site.baseurl}}/projects/portazh/)
 * [Долговременный уход]({{site.baseurl}}/projects/longterm/)
 * [Специалистам]({{site.baseurl}}/projects/professional/)

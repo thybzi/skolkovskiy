@@ -4,7 +4,6 @@ title: Портаж
 
 Тест 
 
-{% include iframe-video_youtube.html id="UK-inwCLc0Y" %}
 
 <div class="blog">
 {% assign portazh_posts = site.portazh | order:"date" %}

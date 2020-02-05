@@ -157,15 +157,6 @@ defaults:
       files_subdir: ebru
       section_breadcrumb: "/projects/~Проекты|/projects/ebru/~Рисование в технике Эбру"
   -
-   scope:
-      path: ""
-      type: portazh
-    values:
-      layout: "post"
-      cover_image_key: 0
-      files_subdir: portazh
-      section_breadcrumb: "/projects/~Проекты|/projects/portazh/~Портаж"
-  -
     scope:
       path: ""
       type: longterm

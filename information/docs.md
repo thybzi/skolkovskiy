@@ -49,7 +49,9 @@ title: Документы
 * {% include doc-link.html text="Санитарно-эпидемиологическое заключение (08.07.2016)" uri="files/docs/sanitary-conclusion_2016-07-08.pdf" %}
 
 ### Отчеты
-* {% include doc-link.html text="Отчет о результатах самообследования (2017–2018)" uri="files/docs/self-examination-report_2017-2018.docx" %}
+* Отчет о результатах самообследования: {% include doc-link.html text="2018" uri="files/docs/self-examination-report_2017-2018.docx" %}
+{% include doc-link.html text="2018" uri="files/docs/self-examination-report_2017-2018.docx" %}
+{% include doc-link.html text="2019" uri="files/docs/self-examination-report_2019.docx" %}
 * {% include doc-link.html text="О результатах самообследования 2018-2019год" uri="files/docs/samoobsledovanie2018-2019.docx" %}
 * Отчет Попечительского совета:
   {% include doc-link.html text="2018" uri="files/docs/trustee-board-report_2018.pdf" %} |

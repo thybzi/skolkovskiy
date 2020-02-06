@@ -63,7 +63,7 @@ permalink: /information/staff/
 
 ### Педагогический состав
 
-Сведения о членах методического объединения специалистов ГКУ ЦССВ «Сколковский» 2017—2018 гг.
+Сведения о членах методического объединения специалистов ГКУ ЦССВ «Сколковский».
 
 {% include staff-table__begin.html %}
 
@@ -200,15 +200,6 @@ permalink: /information/staff/
 %}
 
 {% include staff-table__item.html
-    name="Дуплищева Ирина Александровна"
-    birthdate="15.05.1987"
-    specialization="Логопедия"
-    position="Учитель-дефектолог"
-    education="Высшее, МГГУ им. Шолохова, г. Москва, 2015"
-    experience="1"
-%}
-
-{% include staff-table__item.html
     name="Волкова Мария Николаевна"
     birthdate="12.07.1983"
     specialization="Преподаватель истории, олигофренопедагог, маркетолог"
@@ -225,15 +216,6 @@ permalink: /information/staff/
     position="Медицинский психолог"
     education="Высшее, ГАБУ МГПУ, 2017"
     experience="1"
-%}
-
-{% include staff-table__item.html
-    name="Халилова Екатерина Тагировна"
-    birthdate="23.02.1979"
-    specialization="Специальная психология"
-    position="Педагог-психолог"
-    education="Высшее, МГПУ, 2004"
-    experience="13"
 %}
 
 {% include staff-table__end.html %}

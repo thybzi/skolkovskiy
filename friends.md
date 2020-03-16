@@ -27,5 +27,6 @@ title: Наши друзья
     files/friends/dodo-pizza.jpg
     files/friends/sledkom.jpg
     files/friends/atii.jpg
+    files/friends/hramVsexSkorbashihRadost.png
 {% endcapture %}
 {% include gallery_custom.html items=gallery_items %}

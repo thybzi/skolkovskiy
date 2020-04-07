@@ -26,19 +26,6 @@
     </div>
 {% endcapture %}
 
-{% capture substitute_announce %}
-    <div class="bd_title"><div>Соблюдайте <span>пожарную безопасность!</span></div></div>
-    <div class="bd_content">
-        <div>Не оставляйте &nbsp;детей &nbsp;одних дома!</div>
-        <ul class="arrow">
-            <li>{% include doc-link.html text="" uri="files/orvi/Gigiena.docx" %}</li>
-            <li>{% include doc-link.html text="" uri="files/orvi/Ovirusax.docx" %}</li><div>респираторных вирусных&nbsp; инфекциях</div>
-            <li>{% include doc-link.html text="" uri="files/orvi/Profilaktica.docx" %}</li>
-                    </ul>
-        <span class="bd_more"><a href="{{ site.baseurl }}/orvi/">узнать больше</a></span>
-    </div>
-{% endcapture %}
-
 <div class="bd{{ include.order }}" id="announce_container">
     {% if announced_post %}
         {% assign post = announced_post %}

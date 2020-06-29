@@ -63,7 +63,8 @@ title: Документы
   {% include doc-link.html text="2019" uri="files/docs/director-report_2019.docx" %}
 * {% include doc-link.html text="Отчёт о социализации воспитанников в ГКУ ЦССВ «Сколковский»" uri="files/docs/socialization-report.docx" %}
 * {% include doc-link.html text="Информация об обучении педагогических работников организации за 2019 г." uri="files/docs/staff-education_2019.doc" %}
-* {% include doc-link.html text="Отчет об исполнении мероприятий, предусмотренных Планом" uri="files/docs/otchet_koruptsia.tif" %}. противодействия корупции в ГКУ ЦССВ «Сколковский» на 2018-2020 годы за певое полугодие 2019 года.
+* {% include doc-link.html text="Отчет об исполнении мероприятий, предусмотренных Планом" uri="files/docs/otchet_koruptsia.tif" %}. противодействия корупции в ГКУ ЦССВ «Сколковский» на 2018-2020 годы за первое полугодие 2019 года.
+* {% include doc-link.html text="Отчет об исполнении мероприятий, предусмотренных Планом" uri="files/docs/otchet2020.pdf" %}. противодействия корупции в ГКУ ЦССВ «Сколковский» на 2018-2020 годы за первое полугодие 2020 года.
 
 ### Другие документы
 * {% include doc-link.html text="Правила внутреннего распорядка" uri="files/docs/internal-regulation.docx" %}

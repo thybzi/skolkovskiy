@@ -1,7 +1,0 @@
-{% assign item = include.item %}
-{
-    "url": "{{ item.url }}",
-    "date": {% if item.date %}"{{ item.date }}"{% else %}null{% endif %},
-    "title": "{{ item.title }}",
-    "text": {% include _search/json-text.html text=item.content %}
-},

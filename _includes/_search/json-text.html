@@ -1,9 +1,0 @@
-{% capture devnull %}
-    {% assign result = include.text
-        | markdownify | newline_to_br | replace:"<br />"," " | strip_newlines
-        | strip_html | replace:'"',"&quot;" | replace:"&nbsp;"," " | strip
-    %}
-    {% if include.max_words %}
-        {% assign result = result | truncatewords:include.max_words,"" %}
-    {% endif %}
-{% endcapture %}"{{ result }}"

@@ -1,0 +1,18 @@
+{% capture devnull %}
+    {% assign items = include.items | newline_to_br | strip_newlines | split:"<br />" %}
+{% endcapture %}{% assign devnull = nil %}
+<div class="phocagallery">
+{% for item in items %}
+    {% capture devnull %}
+        {% assign item = item | strip %}
+        {% assign item_strlen = item | size %}
+        {% assign data = item | split:"|" %}
+        {% assign image = data[0] | strip %}
+        {% assign thumb = data[1] | strip %}
+        {% assign caption = data[2] | strip %}
+    {% endcapture %}{% assign devnull = nil %}
+    {% if item_strlen > 0 %}
+        {% include gallery-item.html image=image thumb=thumb caption=caption %}
+    {% endif %}
+{% endfor %}
+</div>

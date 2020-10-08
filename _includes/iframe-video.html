@@ -1,0 +1,8 @@
+{% capture devnull %}
+    {% assign src = include.src %}
+    {% assign width = include.width | default:640 %}
+    {% assign height = include.height | default:360 %}
+{% endcapture %}{% assign devnull = nil %}
+<p class="video-container">
+    <iframe width="{{ width }}" height="{{ height }}" src="{{ src }}" frameborder="0" allowfullscreen></iframe>
+</p>

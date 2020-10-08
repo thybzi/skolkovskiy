@@ -1,0 +1,22 @@
+{% capture list %}{% include _helpers/birthlist.html months_count=include.months_count %}{% endcapture %}
+{% assign list = list | split:"|" %}
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%" class="birthday-cols">
+    <tr>
+        <td valign="top">
+{% for item in list %}
+    {% assign data = item | split:";" %}
+    {% if data[0] == "!month" %}
+        {% unless forloop.first %}
+        </td>
+        <td valign="top">
+        {% endunless %}
+            <div><strong>{{ data[1] }}</strong></div>
+    {% else %}
+            <div>{{ data[1] }} — {{ data[0] }} ({{ data[2] }})</div>
+    {% endif %}
+{% endfor %}
+
+        </td>
+    </tr>
+</table>

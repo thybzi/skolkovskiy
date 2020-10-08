@@ -1,0 +1,80 @@
+---
+layout: null
+---
+[
+
+{% assign pages = site.pages | sort:"url" %}{% for item in pages %}
+    {% assign url_test = item.url | remove:".json" %}
+    {% if url_test == item.url and item.search_exclude != true %}
+        {% include _search/json-item.html item=item %}
+    {% endif %}
+{% endfor %}
+
+{% assign pages = site.albums | sort:"url" %}{% for item in pages %}
+    {% unless item.search_exclude %}
+        {% include _search/json-item.html item=item %}
+    {% endunless %}
+{% endfor %}
+
+{% assign pages = site.announces | sort:"date" %}{% for item in pages %}
+    {% unless item.search_exclude %}
+        {% include _search/json-item.html item=item %}
+    {% endunless %}
+{% endfor %}
+
+{% assign pages = site.posts | sort:"date" | reverse %}{% for item in pages %}
+    {% unless item.search_exclude %}
+        {% include _search/json-item.html item=item %}
+    {% endunless %}
+{% endfor %}
+
+{% assign pages = site.montessori | sort:"url" | reverse %}{% for item in pages %}
+    {% unless item.search_exclude %}
+        {% include _search/json-item.html item=item %}
+    {% endunless %}
+{% endfor %}
+
+{% assign pages = site.elderyhelp | sort:"date" | reverse %}{% for item in pages %}
+    {% unless item.search_exclude %}
+        {% include _search/json-item.html item=item %}
+    {% endunless %}
+{% endfor %}
+
+{% assign pages = site.specialchild | sort:"date" | reverse %}{% for item in pages %}
+    {% unless item.search_exclude %}
+        {% include _search/json-item.html item=item %}
+    {% endunless %}
+{% endfor %}
+
+{% assign pages = site.tvstudio | sort:"date" | reverse %}{% for item in pages %}
+    {% unless item.search_exclude %}
+        {% include _search/json-item.html item=item %}
+    {% endunless %}
+{% endfor %}
+
+{% assign pages = site.sanddrawing | sort:"date" | reverse %}{% for item in pages %}
+    {% unless item.search_exclude %}
+        {% include _search/json-item.html item=item %}
+    {% endunless %}
+{% endfor %}
+
+{% assign pages = site.ebru | sort:"date" | reverse %}{% for item in pages %}
+    {% unless item.search_exclude %}
+        {% include _search/json-item.html item=item %}
+    {% endunless %}
+{% endfor %}
+
+{% assign pages = site.longterm | sort:"date" | reverse %}{% for item in pages %}
+    {% unless item.search_exclude %}
+        {% include _search/json-item.html item=item %}
+    {% endunless %}
+{% endfor %}
+
+{% assign pages = site.media | sort:"date" | reverse %}{% for item in pages %}
+    {% unless item.search_exclude %}
+        {% include _search/json-item.html item=item %}
+    {% endunless %}
+{% endfor %}
+
+    null
+]

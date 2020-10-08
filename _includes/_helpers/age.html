@@ -1,0 +1,15 @@
+{% capture devnull %}
+    {% assign current_year = site.time | date:"%Y" %}
+    {% assign plus_years = include.plus_years | default:0 %}
+    {% assign birth_year = include.date | date:"%Y" %}
+    {% assign age = current_year | plus:plus_years | minus:birth_year %}
+    {% assign age_last_digit = age | split:"" | last | minus:0 %}
+    {% assign age_decade = age | divided_by:10 %}
+    {% if age_last_digit == 1 and age_decade != 1 %}
+        {% assign age_years_word = "год" %}
+    {% elsif age_last_digit >= 2 and age_last_digit <= 4 and age_decade != 1 %}
+        {% assign age_years_word = "года" %}
+    {% else %}
+        {% assign age_years_word = "лет" %}
+    {% endif %}
+{% endcapture %}{% assign devnull = nil %}{{ age }} {{ age_years_word }}

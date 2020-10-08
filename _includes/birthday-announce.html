@@ -1,0 +1,42 @@
+<div class="bd{{ include.order }}">
+    <div class="bd_title"><div>Поздравь <span>ребенка</span></div></div>
+
+    <div class="bd_content" id="birthlist">
+        <span class="bd_more"><a href="{{site.baseurl}}/projects/birthdays/">узнать больше</a></span>
+    </div>
+    <script>
+        (function () {
+            var now = Date.now();
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', '{{ site.baseurl }}/files/birthlist.json?' + now);
+            xhr.onload = function() {
+                var container = document.getElementById("birthlist");
+                var data = JSON.parse(xhr.responseText);
+                var data_items_count = data.length;
+                var output_items_count_max = 9;
+                var output_items_count = 0;
+                var i = 0;
+                var is_odd = false;
+                var item;
+                var item_time;
+                var elem;
+                while ((i < data_items_count) && (output_items_count < output_items_count_max)) {
+                    item = data[i];
+                    item_time = Date.parse(item.birthday + ' 23:59:59');
+                    if (item_time > now) {
+                        elem = document.createElement('div');
+                        is_odd = !is_odd;
+                        if (is_odd) {
+                            elem.className = 'bd_color';
+                        }
+                        elem.innerHTML = item.birthday_str + ' — ' + item.name + ' (' + item.age_str + ')';
+                        container.appendChild(elem);
+                        output_items_count++;
+                    }
+                    i++;
+                }
+            };
+            xhr.send();
+        })();
+    </script>
+</div>

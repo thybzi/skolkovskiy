@@ -1242,13 +1242,6 @@ form.simpleForm textarea.inputtext_small {
     background-color: transparent;
 }
 
-.top-search-form .top-search-button {
-    -webkit-appearance: none;
-    width: 17px;
-    height: 17px;
-    padding: 7px 14px 4px;
-    vertical-align: middle;
-}
 
 table.striped {
     border-collapse: collapse;

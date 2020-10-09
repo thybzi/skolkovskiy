@@ -1,0 +1,47 @@
+---
+title: Наш детский дом-интернат
+order: 940
+images:
+    - phoca_thumb_l_o1.jpg
+    - phoca_thumb_l_o2.jpg
+    - phoca_thumb_l_o5.jpg
+    - phoca_thumb_l_o6.jpg
+    - phoca_thumb_l_o7.jpg
+    - phoca_thumb_l_o8.jpg
+    - phoca_thumb_l_o9.jpg
+    - phoca_thumb_l_o10.jpg
+    - phoca_thumb_l_o11.jpg
+    - phoca_thumb_l_o12.jpg
+    - phoca_thumb_l_o13.jpg
+    - phoca_thumb_l_o14.jpg
+    - phoca_thumb_l_o15.jpg
+    - phoca_thumb_l_o16.jpg
+    - phoca_thumb_l_o17.jpg
+    - phoca_thumb_l_o18.jpg
+    - phoca_thumb_l_o19.jpg
+    - phoca_thumb_l_o20.jpg
+    - phoca_thumb_l_o21.jpg
+    - phoca_thumb_l_o22.jpg
+    - phoca_thumb_l_o23.jpg
+    - phoca_thumb_l_o24.jpg
+    - phoca_thumb_l_o25.jpg
+    - phoca_thumb_l_o26.jpg
+    - phoca_thumb_l_o27.jpg||Социальный педагог Параскева Наталья Серафимовна
+    - phoca_thumb_l_o28.jpg
+    - phoca_thumb_l_o29.jpg
+    - phoca_thumb_l_o30.jpg
+    - phoca_thumb_l_o31.jpg
+    - phoca_thumb_l_o32.jpg
+    - phoca_thumb_l_o33.jpg
+    - phoca_thumb_l_o34.jpg
+    - phoca_thumb_l_o35.jpg
+    - phoca_thumb_l_o36.jpg
+    - phoca_thumb_l_o37.jpg
+    - phoca_thumb_l_o38.jpg
+    - phoca_thumb_l_o39.jpg
+    - phoca_thumb_l_o40.jpg
+    - phoca_thumb_l_o41.jpg
+    - phoca_thumb_l_06_07_2015_1.jpg
+    - phoca_thumb_l_06_07_2015_2.jpg
+    - phoca_thumb_l_06_07_2015_3.jpg
+---

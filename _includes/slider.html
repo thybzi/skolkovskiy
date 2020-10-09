@@ -1,0 +1,40 @@
+<div class="slider">
+
+    <script>
+        jQuery(document).ready(function() {
+            jQuery('.box_skitter_id').skitter({
+                velocity: 1,
+                interval: 5000,
+                auto_play: true,
+                focus: false,
+                focus_position: 'center',
+                numbers:true,
+                label: true,
+                hideTools: false,
+                fullscreen: false,
+                width_label: 'null',
+                show_randomly: false,
+                controls: false,
+                controls_position: 'center',
+                progressbar: false,
+                enable_navigation_keys: false,
+                animateNumberOut: {backgroundColor:'#333333', color:'#FFFFFF'},
+                animateNumberOver: {backgroundColor:'#000000', color:'#FFFFFF'},
+                animateNumberActive: {backgroundColor:'#CC3333', color:'#FFFFFF'},
+                numbers_align: 'right'
+            });
+        });
+    </script>
+
+    <div class="mod_jt_skitter_slideshow_img">
+        <div class="box_skitter box_skitter_id">
+            <ul>
+            {% for i in (1..include.items_count) %}
+                <li>
+                    <img src="{{ site.baseurl }}/files/slider/{{ i }}.jpg" class="fade" alt="">
+                </li>
+            {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>

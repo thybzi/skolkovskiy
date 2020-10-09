@@ -1,0 +1,38 @@
+---
+title: Ищу маму
+---
+
+<div class="columns-container">
+    <div class="column-left">
+        <p>
+            — Мама! В моем крохотном сердечке<br>
+            Столько нерастраченной любви!<br>
+            Где же ты, родной мой человечек?<br>
+            Позови меня, родная, позови!
+        </p>
+        <p>
+            Мне так холодно в моей пустой кроватке!<br>
+            Мамочка, прижми меня к груди!<br>
+            Без сомненья полюби и без оглядки!<br>
+            Мамочка, приди ко мне, приди!
+        </p>
+        <p>
+            Мамочка, мне очень одиноко!<br>
+            Я ищу тебя глазами вновь и вновь!<br>
+            Полюби меня без страха и упрека,<br>
+            Ведь мне так нужна твоя любовь
+        </p>
+    </div>
+    <div style="column-right">
+        {% include iframe-video_youtube.html id="aw3yFN_uj2Q" %}
+    </div>
+</div>
+
+<div class="blog">
+
+    {% assign children = site.children | where_exp:"item","item.missingyou_ordinal > 0" | sort:"missingyou_ordinal" %}
+    {% for item in children %}
+    {% include post-preview.html post=item title=item.name %}
+    {% endfor %}
+
+</div>

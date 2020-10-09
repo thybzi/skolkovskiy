@@ -1,0 +1,98 @@
+{% capture devnull %}
+
+    {% assign seconds_in_day = 60 | times:60 | times:24 %}
+    {% assign seconds_in_30_days = seconds_in_day | times:30 %}
+    {% assign seconds_in_31_days = seconds_in_day | times:31 %}
+
+    {% assign month_type = include.month_type %}
+    {% assign current_month_first_date = site.time | date:"%Y-%m-01" %}
+    {% if month_type == "previous" %}
+        {% assign month_first_date = current_month_first_date | date:"%s" | minus:seconds_in_day | date:"%Y-%m-01" %}
+    {% elsif month_type == "next" %}
+        {% assign month_first_date = current_month_first_date | date:"%s" | plus:seconds_in_31_days | date:"%Y-%m-01" %}
+    {% else %}
+        {% assign month_type = "current" %}
+        {% assign month_first_date = current_month_first_date %}
+    {% endif %}
+    {% assign month_number = month_first_date | date:"%m" %}
+    {% assign month_prefix = month_first_date | date:"%Y-%m-" %}
+
+    {% assign month_last_date_candidate = month_first_date | date:"%s" | plus:seconds_in_30_days %}
+    {% assign month_last_date_candidate_prefix = month_last_date_candidate | date:"%Y-%m-" %}
+    {% if month_last_date_candidate_prefix == month_prefix %}
+        {% assign month_last_date = month_last_date_candidate %}
+    {% else %}
+        {% assign extra_days = month_last_date_candidate | date:"%e" %}
+        {% assign extra_seconds = seconds_in_day | times:extra_days %}
+        {% assign month_last_date = month_last_date_candidate | minus:extra_seconds %}
+    {% endif %}
+    {% assign month_last_date = month_last_date | date:"%Y-%m-%d" %}
+    {% assign month_last_day = month_last_date | date:"%e" | plus:0 %}
+
+    {% assign announces = site.announces | sort:calendar_priority | reverse %}
+
+{% endcapture %}{% assign devnull = nil %}
+<div class="calendar-item" data-type="{{ month_type }}"{% unless month_type == "current" %} style="display: none;"{% endunless %}>
+
+    <div class="calendar-caption">Календарь мероприятий в {% include _helpers/monthname.html month=month_number %}:</div>
+
+    <table class="calendar"{% if month_type == "current" %} id="current_month_calendar"{% endif %}>
+        <tr>
+            {% for day in (1..month_last_day) %}
+                {% capture devnull %}
+                    {% assign date = day | prepend:month_prefix | date:"%Y-%m-%d" %}
+                    {% assign weekday = date | date:"%w" | plus:0 %}
+                    {% if weekday == 0 %}
+                        {% assign weekday = 7 %}
+                    {% endif %}
+                {% endcapture %}{% assign devnull = nil %}
+
+                {% if forloop.first and weekday > 1 %}
+                    {% assign iterations = weekday | minus:1 %}
+                    {% for i in (1..iterations) %}
+                        <td{% unless month_type == "next" %} class="past"{% endunless %}></td>
+                    {% endfor %}
+                {% endif %}
+
+                {% assign post = nil %}
+                {% for item in announces %}
+                    {% assign item_date = item.date | date:"%Y-%m-%d" %}
+                    {% if item_date == date %}
+                        {% assign post = item %}
+                        {% break %}
+                    {% endif %}
+                {% endfor %}
+                {% if post %}
+                    <td class="event{% if month_type == "previous" %} past{% endif %}" data-date="{{ date }}">
+                        <a href="{{ post.url | prepend:site.baseurl }}" title="{{ post.title }}">{{ day }}</a>
+                    </td>
+                {% else %}
+                    <td{% if month_type == "previous" %} class="past"{% endif %} data-date="{{ date }}">{{ day }}</td>
+                {% endif %}
+
+                {% if forloop.last and weekday < 7 %}
+                    {% assign iterations = 7 | minus:weekday %}
+                    {% for i in (1..iterations) %}
+                        <td{% if month_type == "previous" %} class="past"{% endif %}></td>
+                    {% endfor %}
+                {% endif %}
+
+                {% unless forloop.last or weekday != 7 %}
+                    </tr>
+                    <tr>
+                {% endunless %}
+            {% endfor %}
+        </tr>
+    </table>
+
+    <div class="calendar-links">
+    {% if month_type == "previous" %}
+        <a href="#" class="calendar-link forward" data-target="current">позже</a>
+    {% elsif month_type == "next" %}
+        <a href="#" class="calendar-link backward" data-target="current">раньше</a>
+    {% else %}
+        <a href="#" class="calendar-link backward" data-target="previous">раньше</a>
+        <a href="#" class="calendar-link forward" data-target="next">позже</a>
+    {% endif %}
+    </div>
+</div>

@@ -1,0 +1,5 @@
+{% capture devnull %}
+    {% assign current_year = site.time | date:"%Y" %}
+    {% assign plus_years = include.plus_years | default:0 %}
+    {% assign target_year = current_year | plus:plus_years %}
+{% endcapture %}{% assign devnull = nil %}{{ target_year }}{{ include.date | date:"-%m-%d" }}
